@@ -24,6 +24,8 @@ namespace BloodDonationDataBase.Infrastructure.Configurations
             builder.Property(d => d.DateOfBirth).IsRequired();
             builder.Property(d => d.Age).IsRequired();
             builder.Property(d => d.AddressId).IsRequired();
+            builder.Property(d => d.Weight).HasMaxLength(3)
+                .HasDefaultValue(0).IsRequired();
             builder.Property(d => d.Gender).HasConversion<string>()
                 .IsRequired();
             builder.Property(d => d.BloodType).HasConversion<string>()

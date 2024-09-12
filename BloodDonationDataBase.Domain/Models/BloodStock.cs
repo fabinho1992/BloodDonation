@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BloodDonationDataBase.Domain.Enuns;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace BloodDonationDataBase.Domain.Models
 {
     public class BloodStock
     {
-        public BloodStock(int id, string bloodType, string factorRh)
+        public BloodStock(int id, BloodType bloodType, FactorRh factorRh)
         {
             Id = id;
             BloodType = bloodType;
@@ -17,8 +18,8 @@ namespace BloodDonationDataBase.Domain.Models
         }
 
         public int Id { get; private set; }
-        public string BloodType { get; private set; }
-        public string FactorRh { get; private set; }
+        public BloodType BloodType { get; private set; }
+        public FactorRh FactorRh { get; private set; }
         public int QuantityMl { get; private set; }
 
 
