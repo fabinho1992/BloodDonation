@@ -8,12 +8,12 @@ namespace BloodDonationDataBase.Domain.Models
 {
     public class BloodStock
     {
-        public BloodStock(int id, string bloodType, string factorRh, int quantityMl)
+        public BloodStock(int id, string bloodType, string factorRh)
         {
             Id = id;
             BloodType = bloodType;
             FactorRh = factorRh;
-            QuantityMl = quantityMl;
+            QuantityMl = 0;
         }
 
         public int Id { get; private set; }
@@ -24,7 +24,12 @@ namespace BloodDonationDataBase.Domain.Models
 
         public void ReceivingDonation(int BloodMl)
         {
+            QuantityMl += BloodMl;
+        }
 
+        public void BloodWithdrawal(int BloodMl)
+        {
+            QuantityMl -= BloodMl;
         }
 
     }

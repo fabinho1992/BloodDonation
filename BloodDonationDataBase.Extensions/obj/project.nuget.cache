@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9BpFHrgZTWI=",
+  "dgSpecHash": "vrIZ4uWZB4A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\ProjetosMentoria\\BloodDonationDatabase\\BloodDonation\\BloodDonationDataBase.Extensions\\BloodDonationDataBase.Extensions.csproj",
+  "projectFilePath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Extensions\\BloodDonationDataBase.Extensions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
