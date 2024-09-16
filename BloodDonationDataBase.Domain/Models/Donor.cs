@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace BloodDonationDataBase.Domain.Models
 {
-    public class Donor
+    public class Donor : BaseModel
     {
-        public Donor(int id, int name, string email, DateTime dateOfBirth, int age, Gender gender, double weight,
-            BloodType bloodType, FactorRh factorRh, int addressId)
+        public Donor(int name, string email, DateTime dateOfBirth, int age, Gender gender, double weight,
+            BloodType bloodType, FactorRh factorRh)
         {
-            Id = id;
             Name = name;
             Email = email;
             DateOfBirth = dateOfBirth;
@@ -21,10 +20,8 @@ namespace BloodDonationDataBase.Domain.Models
             Weight = weight;
             BloodType = bloodType;
             FactorRh = factorRh;
-            AddressId = addressId;
         }
 
-        public int Id { get; private set; }
         public int Name { get; private set; }
         public string Email { get; private set; }
         public DateTime DateOfBirth { get; private set; }
@@ -33,7 +30,6 @@ namespace BloodDonationDataBase.Domain.Models
         public double Weight { get; private set; }
         public BloodType BloodType { get; private set; }
         public FactorRh FactorRh { get; set; }
-        public int AddressId {  get; private set; }
         public Address? Address { get; set; }
         public List<Donation>? Donations { get; set; }
     }

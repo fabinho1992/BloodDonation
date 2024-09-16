@@ -7,17 +7,15 @@ using System.Threading.Tasks;
 
 namespace BloodDonationDataBase.Domain.Models
 {
-    public class BloodStock
+    public class BloodStock : BaseModel
     {
-        public BloodStock(int id, BloodType bloodType, FactorRh factorRh)
+        public BloodStock(BloodType bloodType, FactorRh factorRh)
         {
-            Id = id;
             BloodType = bloodType;
             FactorRh = factorRh;
             QuantityMl = 0;
         }
 
-        public int Id { get; private set; }
         public BloodType BloodType { get; private set; }
         public FactorRh FactorRh { get; private set; }
         public int QuantityMl { get; private set; }

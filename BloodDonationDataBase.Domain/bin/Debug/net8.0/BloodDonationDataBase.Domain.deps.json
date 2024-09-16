@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BloodDonationDataBase.Domain/1.0.0": {
+        "runtime": {
+          "BloodDonationDataBase.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BloodDonationDataBase.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

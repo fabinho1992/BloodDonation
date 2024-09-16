@@ -24,6 +24,7 @@ namespace BloodDonationDataBase.Infrastructure.Configurations
                 .IsRequired();
             builder.Property(a => a.ZipCode).HasMaxLength(8)
                 .IsRequired();
+            builder.Property(a => a.DonorId).IsRequired();
         }
     }
 }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hMxyqgR07fufM8N3BORpwqt6y0J4IQBpIwm17tQa4eE=",
+  "Source": "BloodDonationDataBase.Api",
+  "BasePath": "_content/BloodDonationDataBase.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

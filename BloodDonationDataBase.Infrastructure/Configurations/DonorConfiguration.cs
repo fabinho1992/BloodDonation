@@ -23,7 +23,6 @@ namespace BloodDonationDataBase.Infrastructure.Configurations
             builder.HasIndex(d => d.Email).IsUnique();
             builder.Property(d => d.DateOfBirth).IsRequired();
             builder.Property(d => d.Age).IsRequired();
-            builder.Property(d => d.AddressId).IsRequired();
             builder.Property(d => d.Weight).HasMaxLength(3)
                 .HasDefaultValue(0).IsRequired();
             builder.Property(d => d.Gender).HasConversion<string>()
@@ -32,6 +31,14 @@ namespace BloodDonationDataBase.Infrastructure.Configurations
                 .IsRequired();
             builder.Property(d => d.FactorRh).HasConversion<string>()
                 .IsRequired();
+            builder.HasMany(x => x.Donations)
+                .WithOne(x => x.Donor)
+                .HasForeignKey(x => x.DonorId)
+                .OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(p => p.Address)
+               .WithOne(e => e.Donor)
+               .HasForeignKey<Address>(e => e.DonorId)
+               .OnDelete(DeleteBehavior.Restrict);
 
         }
     }

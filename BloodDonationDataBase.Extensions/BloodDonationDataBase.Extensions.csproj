@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BloodDonationDataBase.Api\BloodDonationDataBase.Api.csproj" />
     <ProjectReference Include="..\BloodDonationDataBase.Infrastructure\BloodDonationDataBase.Infrastructure.csproj" />
   </ItemGroup>
 
