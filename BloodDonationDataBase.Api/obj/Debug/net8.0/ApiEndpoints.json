@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "BloodDonationDataBase.Api.Controllers.DonorsController",
+    "Method": "Post",
+    "RelativePath": "api/Donors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "donor",
+        "Type": "BloodDonationDataBase.Domain.Models.Donor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -138,9 +138,10 @@ namespace BloodDonationDataBase.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Name")
+                    b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("int");
+                        .HasColumnType("NVARCHAR");
 
                     b.Property<double>("Weight")
                         .ValueGeneratedOnAdd()

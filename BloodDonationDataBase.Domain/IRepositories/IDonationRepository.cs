@@ -12,9 +12,9 @@ namespace BloodDonationDataBase.Domain.IRepositories
     {
         Task Create(Donation donation);
         Task<IEnumerable<Donation>> GetAll(ParametrosPaginacao paginacao);
-        Task<IEnumerable<Donor>> GetAllBloodType(BloodType bloodType);
-        Task<Donor> GetById(int id);
-        Task Update(Donor user);
-        Task Delete(Donor user);
+        Task<IEnumerable<Donation>> GetAllBloodType(BloodType bloodType);
+        Task<Donation?> GetById(int id);
+        Task Update(Donation user);
+        Task Delete(Donation user);
     }
 }

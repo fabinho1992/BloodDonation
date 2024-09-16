@@ -17,6 +17,7 @@ namespace BloodDonationDataBase.Infrastructure.Configurations
 
             builder.HasKey(x => x.Id);  
             builder.Property(d => d.Name).HasMaxLength(50)
+                .HasColumnType("NVARCHAR")
                 .IsRequired();
             builder.Property(d => d.Email).HasMaxLength(80)
                 .IsRequired();

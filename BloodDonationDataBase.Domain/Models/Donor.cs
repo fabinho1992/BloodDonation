@@ -9,28 +9,45 @@ namespace BloodDonationDataBase.Domain.Models
 {
     public class Donor : BaseModel
     {
-        public Donor(int name, string email, DateTime dateOfBirth, int age, Gender gender, double weight,
+        public Donor(string name, string email, DateTime dateOfBirth, Gender gender, double weight,
             BloodType bloodType, FactorRh factorRh)
         {
             Name = name;
             Email = email;
             DateOfBirth = dateOfBirth;
-            Age = age;
+            Age = CalculatedAge(dateOfBirth);
             Gender = gender;
             Weight = weight;
             BloodType = bloodType;
             FactorRh = factorRh;
         }
 
-        public int Name { get; private set; }
+        public string Name { get; private set; }
         public string Email { get; private set; }
         public DateTime DateOfBirth { get; private set; }
-        public int Age { get; private set; }
+        public int Age { get ; private set; }
         public Gender Gender { get; private set; }
         public double Weight { get; private set; }
         public BloodType BloodType { get; private set; }
         public FactorRh FactorRh { get; set; }
         public Address? Address { get; set; }
-        public List<Donation>? Donations { get; set; }
+        public List<Donation>? Donations { get; private set; }
+
+
+        public int CalculatedAge(DateTime date)
+        {
+            // Calcula a idade com base na data de aniversário
+            var hoje = DateTime.Now;
+            var idade = hoje.Year - date.Year;
+
+            // Verifica se o aniversário já passou este ano
+            if (hoje.Month < date.Month || (hoje.Month == date.Month && hoje.Day < date.Day))
+            {
+                idade--;
+            }
+
+            return idade;
+        }
+
     }
 }

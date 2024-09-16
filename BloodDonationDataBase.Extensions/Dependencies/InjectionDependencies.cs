@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.Json.Serialization;
 using Newtonsoft.Json.Converters;
+using BloodDonationDataBase.Domain.IRepositories;
+using BloodDonationDataBase.Infrastructure.Repositories;
 
 namespace BloodDonationDataBase.Extensions.Dependencies
 {
@@ -39,13 +41,12 @@ namespace BloodDonationDataBase.Extensions.Dependencies
 
 
 
-            ////InjectionDependency
-            //services.AddScoped<IBookRepository, BookRepository>();
-            //services.AddScoped<IUserRepository, UserRepository>();
-            //services.AddScoped<ILoanRepository, LoanRepository>();
-            //services.AddScoped<IBookDapperRepository, BookDapperRepository>();
-            //services.AddScoped<IEmailService, EmailService>();
-            //services.AddScoped<ISendEmails, SendEmails>();
+            //InjectionDependency
+            services.AddScoped<IDonorRepository, DonorRepository>();
+            services.AddScoped<IDonationRepository, DonationRepository>();
+            services.AddScoped<IBloodStockRepository, BloodStockRepositoy>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            
 
             ////FluentValidation
             //services.AddFluentValidationAutoValidation()
