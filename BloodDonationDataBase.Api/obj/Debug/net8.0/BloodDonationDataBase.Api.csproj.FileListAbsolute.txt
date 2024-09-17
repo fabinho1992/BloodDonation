@@ -296,3 +296,7 @@ C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonat
 C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Api\bin\Debug\net8.0\BloodDonationDataBase.Application.pdb
 C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Api\bin\Debug\net8.0\MediatR.dll
 C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Api\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Api\bin\Debug\net8.0\MediatR.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Api\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Api\bin\Debug\net8.0\BloodDonationDataBase.Application.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Api\bin\Debug\net8.0\BloodDonationDataBase.Application.pdb

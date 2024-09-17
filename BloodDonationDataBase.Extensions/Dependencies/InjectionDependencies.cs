@@ -59,16 +59,16 @@ namespace BloodDonationDataBase.Extensions.Dependencies
             //services.AddTransient<IPipelineBehavior<CreateLoanCommand, ResultViewModel<int>>, ValidateCreateLoancommand>();
             //services.AddTransient<IPipelineBehavior<EndLoanCommand, ResultViewModel>, ValidateEndLoanCommand>();
 
-            //var myHandlers = AppDomain.CurrentDomain.Load("BookManager.Application");
-            //services.AddMediatR(config =>
-            //    config.RegisterServicesFromAssembly(myHandlers));
+            var myHandlers = AppDomain.CurrentDomain.Load("BloodDonationDataBase.Application");
+            services.AddMediatR(config =>
+                config.RegisterServicesFromAssembly(myHandlers));
 
             ////AutoMapper
             //services.AddAutoMapper(typeof(BookProfile));
             //services.AddAutoMapper(typeof(LoanProfile));
             //services.AddAutoMapper(typeof(UserProfile));
 
-          
+
 
             return services;
 
