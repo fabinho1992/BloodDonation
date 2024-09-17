@@ -35,21 +35,28 @@ namespace BloodDonationDataBase.Infrastructure.Migrations
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
+                    b.Property<string>("Complement")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<int>("DonorId")
                         .HasColumnType("int");
 
-                    b.Property<int>("State")
+                    b.Property<string>("State")
+                        .IsRequired()
                         .HasMaxLength(30)
-                        .HasColumnType("int");
+                        .HasColumnType("NVARCHAR");
 
                     b.Property<string>("Street")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
-                    b.Property<int>("ZipCode")
-                        .HasMaxLength(8)
-                        .HasColumnType("int");
+                    b.Property<string>("ZipCode")
+                        .IsRequired()
+                        .HasMaxLength(9)
+                        .HasColumnType("NVARCHAR");
 
                     b.HasKey("Id");
 
@@ -148,6 +155,11 @@ namespace BloodDonationDataBase.Infrastructure.Migrations
                         .HasMaxLength(3)
                         .HasColumnType("float")
                         .HasDefaultValue(0.0);
+
+                    b.Property<string>("ZipCode")
+                        .IsRequired()
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
 
                     b.HasKey("Id");
 

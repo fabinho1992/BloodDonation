@@ -1,5 +1,8 @@
-﻿using BloodDonationDataBase.Domain.IRepositories;
+﻿using BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCommands;
+using BloodDonationDataBase.Application.Services;
+using BloodDonationDataBase.Domain.IRepositories;
 using BloodDonationDataBase.Domain.Models;
+using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,25 +12,18 @@ namespace BloodDonationDataBase.Api.Controllers
     [ApiController]
     public class DonorsController : ControllerBase
     {
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMediator _mediator;
 
-        public DonorsController(IUnitOfWork unitOfWork)
+        public DonorsController(IMediator mediator)
         {
-            _unitOfWork = unitOfWork;
+            _mediator = mediator;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Donor donor)
+        public async Task<IActionResult> Post(CreateDonorCommand donor)
         {
-            
 
-            await _unitOfWork.DonorRepository.Create(donor);
-
-            await _unitOfWork.Commit();
-            //var Address = new Address(donor.Address.Street, donor.Address.City, donor.Address.State,
-            //                            donor.Address.ZipCode, donor.Address.DonorId);
-            //await _unitOfWork.AddressRepository.Create(Address);
-            //await _unitOfWork.Commit();
+            var createDonor = await _mediator.Send(donor);
 
             return Ok();
             

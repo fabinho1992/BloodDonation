@@ -1,4 +1,5 @@
-﻿using BloodDonationDataBase.Application.Services;
+﻿using BloodDonationDataBase.Application.Dtos.CepResponse;
+using BloodDonationDataBase.Application.Services;
 using BloodDonationDataBase.Domain.Models;
 using Newtonsoft.Json;
 using System;
@@ -12,7 +13,7 @@ namespace BloodDonationDataBase.Infrastructure.Services
 {
     public class AddressZipCode : IAddressZipCode
     {
-        public async Task<Address> SearchZipCode(string zipCode)
+        public async Task<ViaCepResponse> SearchZipCode(string zipCode)
         {
             using var client = new HttpClient();
             var url = $"https://viacep.com.br/ws/{zipCode}/json/";
@@ -21,7 +22,7 @@ namespace BloodDonationDataBase.Infrastructure.Services
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<Address>(json);
+                return JsonConvert.DeserializeObject<ViaCepResponse>(json);
             }
             else
             {

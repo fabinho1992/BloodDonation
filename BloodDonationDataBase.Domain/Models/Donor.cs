@@ -10,7 +10,7 @@ namespace BloodDonationDataBase.Domain.Models
     public class Donor : BaseModel
     {
         public Donor(string name, string email, DateTime dateOfBirth, Gender gender, double weight,
-            BloodType bloodType, FactorRh factorRh)
+            BloodType bloodType, FactorRh factorRh, string zipCode)
         {
             Name = name;
             Email = email;
@@ -20,6 +20,7 @@ namespace BloodDonationDataBase.Domain.Models
             Weight = weight;
             BloodType = bloodType;
             FactorRh = factorRh;
+            ZipCode = zipCode;
         }
 
         public string Name { get; private set; }
@@ -30,6 +31,7 @@ namespace BloodDonationDataBase.Domain.Models
         public double Weight { get; private set; }
         public BloodType BloodType { get; private set; }
         public FactorRh FactorRh { get; set; }
+        public string ZipCode { get; private set; }
         public Address? Address { get; set; }
         public List<Donation>? Donations { get; private set; }
 

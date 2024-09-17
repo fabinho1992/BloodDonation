@@ -34,3 +34,5 @@ C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationD
 C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\ref\BloodDonationDataBase.Infrastructure.dll
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Application.dll
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Application.pdb

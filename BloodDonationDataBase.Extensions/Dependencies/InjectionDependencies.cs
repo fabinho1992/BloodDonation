@@ -6,6 +6,8 @@ using System.Text.Json.Serialization;
 using Newtonsoft.Json.Converters;
 using BloodDonationDataBase.Domain.IRepositories;
 using BloodDonationDataBase.Infrastructure.Repositories;
+using BloodDonationDataBase.Application.Services;
+using BloodDonationDataBase.Infrastructure.Services;
 
 namespace BloodDonationDataBase.Extensions.Dependencies
 {
@@ -46,7 +48,8 @@ namespace BloodDonationDataBase.Extensions.Dependencies
             services.AddScoped<IDonationRepository, DonationRepository>();
             services.AddScoped<IBloodStockRepository, BloodStockRepositoy>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            
+            services.AddScoped<IAddressZipCode, AddressZipCode>();
+
 
             ////FluentValidation
             //services.AddFluentValidationAutoValidation()
@@ -65,7 +68,7 @@ namespace BloodDonationDataBase.Extensions.Dependencies
             //services.AddAutoMapper(typeof(LoanProfile));
             //services.AddAutoMapper(typeof(UserProfile));
 
-
+          
 
             return services;
 

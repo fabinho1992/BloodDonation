@@ -22,3 +22,7 @@ C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationD
 C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Application\obj\Debug\net8.0\refint\BloodDonationDataBase.Application.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Application\obj\Debug\net8.0\BloodDonationDataBase.Application.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Application\obj\Debug\net8.0\ref\BloodDonationDataBase.Application.dll
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Application\bin\Debug\net8.0\BloodDonationDataBase.Domain.dll
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Application\bin\Debug\net8.0\BloodDonationDataBase.Domain.pdb
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Application\obj\Debug\net8.0\BloodDonationDataBase.Application.csproj.AssemblyReference.cache
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Application\obj\Debug\net8.0\BloodDon.EAC506FD.Up2Date

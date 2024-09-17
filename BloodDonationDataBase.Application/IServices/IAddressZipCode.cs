@@ -1,4 +1,5 @@
-﻿using BloodDonationDataBase.Domain.Models;
+﻿using BloodDonationDataBase.Application.Dtos.CepResponse;
+using BloodDonationDataBase.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace BloodDonationDataBase.Application.Services
 {
     public interface IAddressZipCode
     {
-        Task<Address> SearchZipCode(string zipCode);
+        Task<ViaCepResponse> SearchZipCode(string zipCode);
     }
 }

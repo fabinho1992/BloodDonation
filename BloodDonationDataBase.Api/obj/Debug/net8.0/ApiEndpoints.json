@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "donor",
-        "Type": "BloodDonationDataBase.Domain.Models.Donor",
+        "Type": "BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCommands.CreateDonorCommand",
         "IsRequired": true
       }
     ],

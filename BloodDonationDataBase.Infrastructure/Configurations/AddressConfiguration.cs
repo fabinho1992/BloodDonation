@@ -20,9 +20,13 @@ namespace BloodDonationDataBase.Infrastructure.Configurations
                 .IsRequired();
             builder.Property(a => a.City).HasMaxLength(30)
                 .IsRequired();
-            builder.Property(a => a.State).HasMaxLength(30)
+            builder.Property(a => a.State).HasColumnType("NVARCHAR")
+                .HasMaxLength(30)
                 .IsRequired();
-            builder.Property(a => a.ZipCode).HasMaxLength(8)
+            builder.Property(a => a.ZipCode).HasColumnType("NVARCHAR")
+                .HasMaxLength(9)
+                .IsRequired();
+            builder.Property(a => a.Complement).HasMaxLength(50)
                 .IsRequired();
             builder.Property(a => a.DonorId).IsRequired();
         }
