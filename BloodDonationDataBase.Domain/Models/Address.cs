@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace BloodDonationDataBase.Domain.Models
@@ -24,6 +26,18 @@ namespace BloodDonationDataBase.Domain.Models
         public string ZipCode { get; private set; }
         public string Complement { get; set; }
         public int DonorId { get; set; }
+        [JsonIgnore]
         public Donor? Donor { get; set; }
+
+        public void Update(string street, string city, string state, 
+            string zipCode, string complement, int donorId)
+        {
+            Street = street;
+            City = city;
+            State = state;
+            ZipCode = zipCode;
+            Complement = complement;
+            DonorId = donorId;
+        }
     }
 }

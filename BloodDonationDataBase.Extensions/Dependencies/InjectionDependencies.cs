@@ -8,6 +8,9 @@ using BloodDonationDataBase.Domain.IRepositories;
 using BloodDonationDataBase.Infrastructure.Repositories;
 using BloodDonationDataBase.Application.Services;
 using BloodDonationDataBase.Infrastructure.Services;
+using BloodDonationDataBase.Application.FluentValidation.DonorValidations;
+using FluentValidation.AspNetCore;
+using FluentValidation;
 
 namespace BloodDonationDataBase.Extensions.Dependencies
 {
@@ -51,9 +54,9 @@ namespace BloodDonationDataBase.Extensions.Dependencies
             services.AddScoped<IAddressZipCode, AddressZipCode>();
 
 
-            ////FluentValidation
-            //services.AddFluentValidationAutoValidation()
-            //    .AddValidatorsFromAssemblyContaining<CreateBookCommandValidation>();
+            //fluentvalidation
+            services.AddFluentValidationAutoValidation()
+                .AddValidatorsFromAssemblyContaining<CreateDonorValidation>();
 
             ////Validation Commands
             //services.AddTransient<IPipelineBehavior<CreateLoanCommand, ResultViewModel<int>>, ValidateCreateLoancommand>();

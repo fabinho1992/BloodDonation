@@ -33,10 +33,11 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
                 .Take(paginacao.PageSize).ToListAsync();
         }
 
-        public async Task<Donor?> GetById(int id)
+        public async Task<Donor> GetById(int id)
         {
-            var donor =await _dbContext.Donors.Include(d => d.Address)
-                .Include(d => d.Donations).SingleOrDefaultAsync(d => d.Id == id);
+            var donor = await _dbContext.Donors.FirstOrDefaultAsync(d => d.Id == id);
+                //await _dbContext.Donors.Include(d => d.Address)
+                //.Include(d => d.Donations).SingleOrDefaultAsync(d => d.Id == id);
 
             return donor;
         }

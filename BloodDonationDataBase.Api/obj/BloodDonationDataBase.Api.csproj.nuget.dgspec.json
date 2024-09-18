@@ -138,6 +138,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.4.1, )"
@@ -257,6 +261,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\ProjetosMentoria\\BloodDonationDatabase\\BloodDonation\\BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\ProjetosMentoria\\BloodDonationDatabase\\BloodDonation\\BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj"
+              },
               "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\ProjetosMentoria\\BloodDonationDatabase\\BloodDonation\\BloodDonationDataBase.Infrastructure\\BloodDonationDataBase.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Usuario\\Desktop\\Cursos de Programação\\ProjetosMentoria\\BloodDonationDatabase\\BloodDonation\\BloodDonationDataBase.Infrastructure\\BloodDonationDataBase.Infrastructure.csproj"
               }

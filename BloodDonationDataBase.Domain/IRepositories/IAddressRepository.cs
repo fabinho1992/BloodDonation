@@ -10,5 +10,7 @@ namespace BloodDonationDataBase.Domain.IRepositories
     public interface IAddressRepository
     {
         Task Create(Address address);
+        Task<Address?> GetById(int id);
+        Task Update(Address address);
     }
 }

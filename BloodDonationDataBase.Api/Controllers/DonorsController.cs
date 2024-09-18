@@ -1,4 +1,5 @@
 ﻿using BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCommands;
+using BloodDonationDataBase.Application.Commands.DonorCommands.UpdateDonorCommands;
 using BloodDonationDataBase.Application.Services;
 using BloodDonationDataBase.Domain.IRepositories;
 using BloodDonationDataBase.Domain.Models;
@@ -13,10 +14,12 @@ namespace BloodDonationDataBase.Api.Controllers
     public class DonorsController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public DonorsController(IMediator mediator)
+        public DonorsController(IMediator mediator, IUnitOfWork unitOfWork)
         {
             _mediator = mediator;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpPost]
@@ -27,6 +30,21 @@ namespace BloodDonationDataBase.Api.Controllers
 
             return Ok();
             
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Update(UpdateDonorCommand update)
+        {
+            var updateDonor = await _mediator.Send(update);
+
+            return NoContent();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetId(int id)
+        {
+            var donor = await _unitOfWork.DonorRepository.GetById(id);
+            return Ok(donor);
         }
     }
 }
