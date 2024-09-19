@@ -33,7 +33,6 @@ namespace BloodDonationDataBase.Domain.Models
         public BloodType BloodType { get; private set; }
         public FactorRh FactorRh { get; set; }
         public string ZipCode { get; private set; }
-        [JsonIgnore]
         public Address? Address { get; set; }
         public List<Donation>? Donations { get; private set; }
 

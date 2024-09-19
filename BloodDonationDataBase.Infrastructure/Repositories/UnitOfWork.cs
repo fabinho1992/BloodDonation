@@ -22,7 +22,6 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
         {
             _db = db;
         }
-
         public IBloodStockRepository BloodStockRepository
         {
             get
@@ -30,7 +29,6 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
                 return _bloodStockRepository = _bloodStockRepository ?? new BloodStockRepositoy(_db);
             }
         }
-
         public IDonorRepository DonorRepository
         {
             get
@@ -38,7 +36,6 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
                 return _donorRepository = _donorRepository ?? new DonorRepository(_db);
             }
         }
-
         public IDonationRepository DonationRepository
         {
             get
@@ -46,7 +43,6 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
                 return _donationRepository = _donationRepository ?? new DonationRepository(_db);
             }
         }
-
         public IAddressRepository AddressRepository
         {
             get
@@ -54,12 +50,10 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
                 return _addressRepository = _addressRepository ?? new AddressRepository(_db);
             }
         }
-
         public async Task Commit()
         {
             await _db.SaveChangesAsync();
         }
-
         public async Task Dispose()
         {
             await _db.DisposeAsync();

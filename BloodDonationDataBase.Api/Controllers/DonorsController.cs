@@ -25,6 +25,10 @@ namespace BloodDonationDataBase.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(CreateDonorCommand donor)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
             var createDonor = await _mediator.Send(donor);
 
