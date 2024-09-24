@@ -22,6 +22,7 @@ namespace BloodDonationDataBase.Domain.Models
             BloodType = bloodType;
             FactorRh = factorRh;
             ZipCode = zipCode;
+            LastDonation = null;
         }
 
         public string Name { get; private set; }
@@ -33,6 +34,7 @@ namespace BloodDonationDataBase.Domain.Models
         public BloodType BloodType { get; private set; }
         public FactorRh FactorRh { get; set; }
         public string ZipCode { get; private set; }
+        public DateTime? LastDonation { get; private set; }
         public Address? Address { get; set; }
         public List<Donation>? Donations { get; private set; }
 
@@ -64,6 +66,11 @@ namespace BloodDonationDataBase.Domain.Models
             }
 
             return idade;
+        }
+
+        public void LastDonationDate()
+        {
+            LastDonation = DateTime.Now;
         }
 
     }

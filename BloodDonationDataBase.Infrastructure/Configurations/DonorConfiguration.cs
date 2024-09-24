@@ -23,6 +23,7 @@ namespace BloodDonationDataBase.Infrastructure.Configurations
                 .IsRequired();
             builder.HasIndex(d => d.Email).IsUnique();
             builder.Property(d => d.DateOfBirth).IsRequired();
+            builder.Property(d => d.LastDonation);
             builder.Property(d => d.Age).IsRequired();
             builder.Property(d => d.Weight).HasMaxLength(3)
                 .HasDefaultValue(0).IsRequired();

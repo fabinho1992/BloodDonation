@@ -1,23 +1,3 @@
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.deps.json
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.runtimeconfig.json
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.dll
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.pdb
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Domain.dll
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Domain.pdb
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.AssemblyInfo.cs
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.sourcelink.json
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDon.9FCFD909.Up2Date
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.dll
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\refint\BloodDonationDataBase.Infrastructure.dll
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.pdb
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.genruntimeconfig.cache
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\ref\BloodDonationDataBase.Infrastructure.dll
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Application.dll
-C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Application.pdb
 C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.deps.json
 C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.runtimeconfig.json
 C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.dll
@@ -36,3 +16,21 @@ C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonat
 C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.pdb
 C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.genruntimeconfig.cache
 C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\ref\BloodDonationDataBase.Infrastructure.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.deps.json
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.runtimeconfig.json
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Infrastructure.pdb
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Domain.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\bin\Debug\net8.0\BloodDonationDataBase.Domain.pdb
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.sourcelink.json
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDon.9FCFD909.Up2Date
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\refint\BloodDonationDataBase.Infrastructure.dll
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.pdb
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\BloodDonationDataBase.Infrastructure.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Infrastructure\obj\Debug\net8.0\ref\BloodDonationDataBase.Infrastructure.dll
