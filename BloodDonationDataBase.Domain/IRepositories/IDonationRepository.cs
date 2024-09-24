@@ -14,7 +14,6 @@ namespace BloodDonationDataBase.Domain.IRepositories
         Task<IEnumerable<Donation>> GetAll(ParametrosPaginacao paginacao);
         Task<IEnumerable<Donation>> GetAllBloodType(BloodType bloodType);
         Task<Donation?> GetById(int id);
-        Task Update(Donation user);
-        Task Delete(Donation user);
+        Task Delete(Donation donation);
     }
 }

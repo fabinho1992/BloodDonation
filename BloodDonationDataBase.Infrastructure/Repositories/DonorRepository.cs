@@ -35,9 +35,8 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
 
         public async Task<Donor> GetById(int id)
         {
-            var donor = await _dbContext.Donors.FirstOrDefaultAsync(d => d.Id == id);
-                //await _dbContext.Donors.Include(d => d.Address)
-                //.Include(d => d.Donations).SingleOrDefaultAsync(d => d.Id == id);
+            var donor = await _dbContext.Donors.Include(d => d.Address)
+                .Include(d => d.Donations).SingleOrDefaultAsync(d => d.Id == id);
 
             return donor;
         }

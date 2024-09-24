@@ -1139,6 +1139,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "BloodDonationDataBase.Domain": "1.0.0",
+          "BloodDonationDataBase.Infrastructure": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "MediatR": "12.4.1"
         },
@@ -1163,7 +1164,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "BloodDonationDataBase.Application": "1.0.0",
           "BloodDonationDataBase.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",

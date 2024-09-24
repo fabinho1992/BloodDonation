@@ -21,7 +21,7 @@ namespace BloodDonationDataBase.Application.FluentValidation.DonorValidations
                 .WithMessage("DateOfBirth cannot be null")
                 .LessThanOrEqualTo(DateTime.Now).WithMessage("Date of birth must be less than or equal to the current date.");
 
-            RuleFor(d => d.Gender).NotEmpty()
+            RuleFor(d => d.Gender).NotNull()
                 .WithMessage("Gender cannot be null")
                 .IsInEnum().WithMessage(" 0 - M / 1 - F (M = Masculine / F = Feminine)");
 
@@ -31,11 +31,11 @@ namespace BloodDonationDataBase.Application.FluentValidation.DonorValidations
                 .InclusiveBetween(50, 200)
                 .WithMessage("Weight must be between {From} and {To} kg");
 
-            RuleFor(d => d.BloodType).NotEmpty()
+            RuleFor(d => d.BloodType).NotNull()
                 .WithMessage("BloodType cannot be null")
                 .IsInEnum().WithMessage("0 - A / 1 - B / 2 - AB / 3 - O");
 
-            RuleFor(d => d.FactorRh).NotEmpty()
+            RuleFor(d => d.FactorRh).NotNull()
                 .WithMessage("FactorRh cannot be null")
                 .IsInEnum().WithMessage("0 - Positive / 1 - Negative");
 

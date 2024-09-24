@@ -4,85 +4,6 @@
     "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Infrastructure\\BloodDonationDataBase.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj",
-        "projectName": "BloodDonationDataBase.Application",
-        "projectPath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj",
-        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj": {
-                "projectPath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "FluentValidation.AspNetCore": {
-              "target": "Package",
-              "version": "[11.3.0, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[12.4.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -177,9 +98,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj": {
-                "projectPath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj"
-              },
               "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj": {
                 "projectPath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj"
               }

@@ -119,6 +119,9 @@
             "projectReferences": {
               "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj": {
                 "projectPath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj"
+              },
+              "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Infrastructure\\BloodDonationDataBase.Infrastructure.csproj": {
+                "projectPath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Infrastructure\\BloodDonationDataBase.Infrastructure.csproj"
               }
             }
           }
@@ -343,9 +346,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj": {
-                "projectPath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj"
-              },
               "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj": {
                 "projectPath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj"
               }

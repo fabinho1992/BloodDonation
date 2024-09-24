@@ -52,9 +52,5 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
             return Donor;
         }
 
-        public async Task Update(Donation donation)
-        {
-             _dbContext.Donations.Update(donation);
-        }
     }
 }

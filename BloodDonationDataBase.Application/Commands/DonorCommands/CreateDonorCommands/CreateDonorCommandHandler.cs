@@ -1,5 +1,6 @@
-﻿using BloodDonationDataBase.Application.Services;
+﻿using BloodDonationDataBase.Application.Dtos;
 using BloodDonationDataBase.Domain.IRepositories;
+using BloodDonationDataBase.Domain.IServices;
 using BloodDonationDataBase.Domain.Models;
 using MediatR;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCommands
 {
-    public class CreateDonorCommandHandler : IRequestHandler<CreateDonorCommand, Donor>
+    public class CreateDonorCommandHandler : IRequestHandler<CreateDonorCommand, ResultViewModel<int>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IAddressZipCode _addressZipCode;
@@ -21,12 +22,11 @@ namespace BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCo
             _addressZipCode = addressZipCode;
         }
 
-        public async Task<Donor> Handle(CreateDonorCommand request, CancellationToken cancellationToken)
+        public async Task<ResultViewModel<int>> Handle(CreateDonorCommand request, CancellationToken cancellationToken)
         {
             var donor = new Donor(request.Name,request.Email,request.DateOfBirth,
                 request.Gender,request.Weight,request.BloodType,request.FactorRh,request.ZipCode);
             await _unitOfWork.DonorRepository.Create(donor);
-            await _unitOfWork.Commit();
 
             var zipCode = await _addressZipCode.SearchZipCode(donor.ZipCode);
             var address = new Address(street: zipCode.Logradouro, city: zipCode.Localidade, state: zipCode.Uf,
@@ -34,7 +34,7 @@ namespace BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCo
             await _unitOfWork.AddressRepository.Create(address);
             await _unitOfWork.Commit();
 
-            return donor;
+            return ResultViewModel<int>.Success(donor.Id);
         }
     }
 }

@@ -12,6 +12,6 @@ namespace BloodDonationDataBase.Domain.IRepositories
     {
         Task Create(BloodStock bloodStock);
         Task<IEnumerable<BloodStock>> GetAll(ParametrosPaginacao paginacao);
-        Task<BloodStock?> GetBloodType(BloodType bloodType);
+        Task<BloodStock?> GetBloodType(BloodType bloodType, FactorRh factorRh);
     }
 }

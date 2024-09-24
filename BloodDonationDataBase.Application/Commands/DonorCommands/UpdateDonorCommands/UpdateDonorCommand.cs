@@ -1,4 +1,5 @@
-﻿using BloodDonationDataBase.Domain.Enuns;
+﻿using BloodDonationDataBase.Application.Dtos;
+using BloodDonationDataBase.Domain.Enuns;
 using BloodDonationDataBase.Domain.Models;
 using MediatR;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BloodDonationDataBase.Application.Commands.DonorCommands.UpdateDonorCommands
 {
-    public class UpdateDonorCommand : IRequest<Donor>
+    public class UpdateDonorCommand : IRequest<ResultViewModel<int>>
     {
         public UpdateDonorCommand(int id, string name, string email, DateTime dateOfBirth, Gender gender, double weight, BloodType bloodType,
             FactorRh factorRh, string zipCode, string complement)

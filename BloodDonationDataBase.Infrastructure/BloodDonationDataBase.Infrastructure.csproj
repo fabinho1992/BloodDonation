@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BloodDonationDataBase.Application\BloodDonationDataBase.Application.csproj" />
     <ProjectReference Include="..\BloodDonationDataBase.Domain\BloodDonationDataBase.Domain.csproj" />
   </ItemGroup>
 

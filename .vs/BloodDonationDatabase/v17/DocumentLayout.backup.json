@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.application\\queries\\donorqueries\\donorlistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|solutionrelative:blooddonationdatabase.application\\queries\\donorqueries\\donorlistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.application\\queries\\donorqueries\\donorlistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|solutionrelative:blooddonationdatabase.application\\queries\\donorqueries\\donorlistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.application\\dtos\\viewmodels\\viewmodelsdonor\\donorresponselist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|solutionrelative:blooddonationdatabase.application\\dtos\\viewmodels\\viewmodelsdonor\\donorresponselist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.application\\dtos\\viewmodels\\viewmodelsdonor\\donorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|solutionrelative:blooddonationdatabase.application\\dtos\\viewmodels\\viewmodelsdonor\\donorresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8692B9B3-1BD2-44CD-8CD9-7E754A9DECA9}|BloodDonationDataBase.Api\\BloodDonationDataBase.Api.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.api\\controllers\\donorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8692B9B3-1BD2-44CD-8CD9-7E754A9DECA9}|BloodDonationDataBase.Api\\BloodDonationDataBase.Api.csproj|solutionrelative:blooddonationdatabase.api\\controllers\\donorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.application\\fluentvalidation\\donorvalidations\\createdonorvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|solutionrelative:blooddonationdatabase.application\\fluentvalidation\\donorvalidations\\createdonorvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.application\\queries\\donorqueries\\donorbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|solutionrelative:blooddonationdatabase.application\\queries\\donorqueries\\donorbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C64D4641-D677-4761-B571-B35A67454909}|BloodDonationDataBase.Infrastructure\\BloodDonationDataBase.Infrastructure.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.infrastructure\\configurations\\donorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C64D4641-D677-4761-B571-B35A67454909}|BloodDonationDataBase.Infrastructure\\BloodDonationDataBase.Infrastructure.csproj|solutionrelative:blooddonationdatabase.infrastructure\\configurations\\donorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.application\\queries\\donorqueries\\donorbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|solutionrelative:blooddonationdatabase.application\\queries\\donorqueries\\donorbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5799FE6-04F4-4F17-A8B2-2979DF94B8E9}|BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.domain\\enuns\\factorrh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5799FE6-04F4-4F17-A8B2-2979DF94B8E9}|BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj|solutionrelative:blooddonationdatabase.domain\\enuns\\factorrh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C64D4641-D677-4761-B571-B35A67454909}|BloodDonationDataBase.Infrastructure\\BloodDonationDataBase.Infrastructure.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.infrastructure\\repositories\\donorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C64D4641-D677-4761-B571-B35A67454909}|BloodDonationDataBase.Infrastructure\\BloodDonationDataBase.Infrastructure.csproj|solutionrelative:blooddonationdatabase.infrastructure\\repositories\\donorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5799FE6-04F4-4F17-A8B2-2979DF94B8E9}|BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.domain\\enuns\\bloodtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5799FE6-04F4-4F17-A8B2-2979DF94B8E9}|BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj|solutionrelative:blooddonationdatabase.domain\\enuns\\bloodtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.application\\dtos\\viewmodels\\viewmodelsdonation\\donationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|solutionrelative:blooddonationdatabase.application\\dtos\\viewmodels\\viewmodelsdonation\\donationresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5799FE6-04F4-4F17-A8B2-2979DF94B8E9}|BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.domain\\models\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5799FE6-04F4-4F17-A8B2-2979DF94B8E9}|BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj|solutionrelative:blooddonationdatabase.domain\\models\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.application\\dtos\\viewmodels\\viewmodelsaddress\\addressresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CABFD8F1-7FC4-4637-958C-FBB82E135548}|BloodDonationDataBase.Application\\BloodDonationDataBase.Application.csproj|solutionrelative:blooddonationdatabase.application\\dtos\\viewmodels\\viewmodelsaddress\\addressresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5799FE6-04F4-4F17-A8B2-2979DF94B8E9}|BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj|c:\\aulasalurabackend\\projetosmentoria\\apisistemabancodedoacaodesangue\\blooddonationdatabase\\blooddonationdatabase.domain\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5799FE6-04F4-4F17-A8B2-2979DF94B8E9}|BloodDonationDataBase.Domain\\BloodDonationDataBase.Domain.csproj|solutionrelative:blooddonationdatabase.domain\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +63,157 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DonorsController.cs",
-              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Api\\Controllers\\DonorsController.cs",
-              "RelativeDocumentMoniker": "BloodDonationDataBase.Api\\Controllers\\DonorsController.cs",
-              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Api\\Controllers\\DonorsController.cs",
-              "RelativeToolTip": "BloodDonationDataBase.Api\\Controllers\\DonorsController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAuAAAAAAAAAA==",
+              "Title": "DonorListQueryHandler.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorListQueryHandler.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorListQueryHandler.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorListQueryHandler.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorListQueryHandler.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwCAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T11:18:29.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DonorConfiguration.cs",
-              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Infrastructure\\Configurations\\DonorConfiguration.cs",
-              "RelativeDocumentMoniker": "BloodDonationDataBase.Infrastructure\\Configurations\\DonorConfiguration.cs",
-              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Infrastructure\\Configurations\\DonorConfiguration.cs",
-              "RelativeToolTip": "BloodDonationDataBase.Infrastructure\\Configurations\\DonorConfiguration.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T11:13:54.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FactorRh.cs",
-              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\Enuns\\FactorRh.cs",
-              "RelativeDocumentMoniker": "BloodDonationDataBase.Domain\\Enuns\\FactorRh.cs",
-              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\Enuns\\FactorRh.cs",
-              "RelativeToolTip": "BloodDonationDataBase.Domain\\Enuns\\FactorRh.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T11:11:00.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BloodType.cs",
-              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\Enuns\\BloodType.cs",
-              "RelativeDocumentMoniker": "BloodDonationDataBase.Domain\\Enuns\\BloodType.cs",
-              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\Enuns\\BloodType.cs",
-              "RelativeToolTip": "BloodDonationDataBase.Domain\\Enuns\\BloodType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T11:08:34.081Z",
+              "WhenOpened": "2024-09-24T00:55:49.901Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateDonorValidation.cs",
-              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\FluentValidation\\DonorValidations\\CreateDonorValidation.cs",
-              "RelativeDocumentMoniker": "BloodDonationDataBase.Application\\FluentValidation\\DonorValidations\\CreateDonorValidation.cs",
-              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\FluentValidation\\DonorValidations\\CreateDonorValidation.cs",
-              "RelativeToolTip": "BloodDonationDataBase.Application\\FluentValidation\\DonorValidations\\CreateDonorValidation.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACoAAAA2AAAAAAAAAA==",
+              "Title": "DonorListQuery.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorListQuery.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorListQuery.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorListQuery.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorListQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T20:05:56.273Z",
+              "WhenOpened": "2024-09-24T00:50:29.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DonorResponseList.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonor\\DonorResponseList.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonor\\DonorResponseList.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonor\\DonorResponseList.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonor\\DonorResponseList.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T00:46:27.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DonationResponse.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonation\\DonationResponse.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonation\\DonationResponse.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonation\\DonationResponse.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonation\\DonationResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T00:16:06.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DonorByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorByIdQueryHandler.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorByIdQueryHandler.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorByIdQueryHandler.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCEAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T23:29:20.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DonorRepository.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Infrastructure\\Repositories\\DonorRepository.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Infrastructure\\Repositories\\DonorRepository.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Infrastructure\\Repositories\\DonorRepository.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Infrastructure\\Repositories\\DonorRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T23:19:03.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DonorByIdQuery.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorByIdQuery.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorByIdQuery.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorByIdQuery.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Application\\Queries\\DonorQueries\\DonorByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T23:22:01.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DonorResponse.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonor\\DonorResponse.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonor\\DonorResponse.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonor\\DonorResponse.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsDonor\\DonorResponse.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T23:16:01.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DonorsController.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Api\\Controllers\\DonorsController.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Api\\Controllers\\DonorsController.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Api\\Controllers\\DonorsController.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Api\\Controllers\\DonorsController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAYwDoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T23:49:55.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Donation.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\Models\\Donation.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Domain\\Models\\Donation.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\Models\\Donation.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Domain\\Models\\Donation.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T00:21:27.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddressResponse.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsAddress\\AddressResponse.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsAddress\\AddressResponse.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsAddress\\AddressResponse.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Application\\Dtos\\ViewModels\\ViewModelsAddress\\AddressResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T00:06:56.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\Models\\Address.cs",
+              "RelativeDocumentMoniker": "BloodDonationDataBase.Domain\\Models\\Address.cs",
+              "ToolTip": "C:\\AulasAluraBackEnd\\ProjetosMentoria\\ApiSistemaBancoDeDoacaoDeSangue\\BloodDonationDatabase\\BloodDonationDataBase.Domain\\Models\\Address.cs",
+              "RelativeToolTip": "BloodDonationDataBase.Domain\\Models\\Address.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T00:03:13.961Z",
               "EditorCaption": ""
             }
           ]

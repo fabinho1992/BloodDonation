@@ -1,8 +1,56 @@
 [
   {
+    "ContainingType": "BloodDonationDataBase.Api.Controllers.BloodStockController",
+    "Method": "Post",
+    "RelativePath": "BloodStock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createBloodStock",
+        "Type": "BloodDonationDataBase.Application.Commands.BloodStockCommands.CreateBloodStockCommands.CreateBloodStockCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodDonationDataBase.Api.Controllers.DonationController",
+    "Method": "Post",
+    "RelativePath": "Donation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDonation",
+        "Type": "BloodDonationDataBase.Application.Commands.DonationCommands.CreateDonationCommands.CreateDonationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodDonationDataBase.Api.Controllers.DonationController",
+    "Method": "Delete",
+    "RelativePath": "Donation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deleteDonation",
+        "Type": "BloodDonationDataBase.Application.Commands.DonationCommands.DeleteDonationCommands.DeleteDonationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BloodDonationDataBase.Api.Controllers.DonorsController",
     "Method": "Post",
-    "RelativePath": "api/Donors",
+    "RelativePath": "Donors",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -17,8 +65,29 @@
   },
   {
     "ContainingType": "BloodDonationDataBase.Api.Controllers.DonorsController",
+    "Method": "GetAll",
+    "RelativePath": "Donors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodDonationDataBase.Api.Controllers.DonorsController",
     "Method": "Update",
-    "RelativePath": "api/Donors",
+    "RelativePath": "Donors",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -33,8 +102,24 @@
   },
   {
     "ContainingType": "BloodDonationDataBase.Api.Controllers.DonorsController",
+    "Method": "Delete",
+    "RelativePath": "Donors",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deleteDonor",
+        "Type": "BloodDonationDataBase.Application.Commands.DonorCommands.DeleteDonorCommands.DeleteDonorCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodDonationDataBase.Api.Controllers.DonorsController",
     "Method": "GetId",
-    "RelativePath": "api/Donors",
+    "RelativePath": "Donors/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -42,7 +127,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

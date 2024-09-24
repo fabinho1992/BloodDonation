@@ -1,13 +1,6 @@
-﻿using BloodDonationDataBase.Application.Dtos.CepResponse;
-using BloodDonationDataBase.Application.Services;
-using BloodDonationDataBase.Domain.Models;
+﻿using BloodDonationDataBase.Domain.IServices;
+using BloodDonationDataBase.Domain.Models.CepResponse;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.ConstrainedExecution;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BloodDonationDataBase.Infrastructure.Services
 {

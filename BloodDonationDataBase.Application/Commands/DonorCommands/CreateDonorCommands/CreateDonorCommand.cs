@@ -1,4 +1,5 @@
-﻿using BloodDonationDataBase.Domain.Enuns;
+﻿using BloodDonationDataBase.Application.Dtos;
+using BloodDonationDataBase.Domain.Enuns;
 using BloodDonationDataBase.Domain.Models;
 using MediatR;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCommands
 {
-    public class CreateDonorCommand : IRequest<Donor>
+    public class CreateDonorCommand : IRequest<ResultViewModel<int>>
     {
         public CreateDonorCommand(string name, string email, DateTime dateOfBirth, Gender gender, double weight,
             BloodType bloodType, FactorRh factorRh, string zipCode, string complement)

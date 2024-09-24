@@ -6,11 +6,16 @@ using System.Text.Json.Serialization;
 using Newtonsoft.Json.Converters;
 using BloodDonationDataBase.Domain.IRepositories;
 using BloodDonationDataBase.Infrastructure.Repositories;
-using BloodDonationDataBase.Application.Services;
 using BloodDonationDataBase.Infrastructure.Services;
 using BloodDonationDataBase.Application.FluentValidation.DonorValidations;
 using FluentValidation.AspNetCore;
 using FluentValidation;
+using BloodDonationDataBase.Domain.IServices;
+using MediatR;
+using BloodDonationDataBase.Application.Dtos;
+using BloodDonationDataBase.Application.Commands.DonationCommands.CreateDonationCommands;
+using BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCommands;
+using BloodDonationDataBase.Application.Commands.DonorCommands.UpdateDonorCommands;
 
 namespace BloodDonationDataBase.Extensions.Dependencies
 {
@@ -58,9 +63,10 @@ namespace BloodDonationDataBase.Extensions.Dependencies
             services.AddFluentValidationAutoValidation()
                 .AddValidatorsFromAssemblyContaining<CreateDonorValidation>();
 
-            ////Validation Commands
-            //services.AddTransient<IPipelineBehavior<CreateLoanCommand, ResultViewModel<int>>, ValidateCreateLoancommand>();
-            //services.AddTransient<IPipelineBehavior<EndLoanCommand, ResultViewModel>, ValidateEndLoanCommand>();
+            //Validation Commands
+            services.AddTransient<IPipelineBehavior<CreateDonationCommand, ResultViewModel<int>>, ValidateCreateDonationCommand>();
+            services.AddTransient<IPipelineBehavior<CreateDonorCommand, ResultViewModel<int>>, ValidationCreateDonorCommand>();
+            services.AddTransient<IPipelineBehavior<UpdateDonorCommand, ResultViewModel<int>>, ValidationUpdateDonorCommand>();
 
             var myHandlers = AppDomain.CurrentDomain.Load("BloodDonationDataBase.Application");
             services.AddMediatR(config =>

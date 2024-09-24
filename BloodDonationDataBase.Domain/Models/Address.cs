@@ -26,6 +26,7 @@ namespace BloodDonationDataBase.Domain.Models
         public string ZipCode { get; private set; }
         public string Complement { get; set; }
         public int DonorId { get; set; }
+        [JsonIgnore]
         public Donor? Donor { get; set; }
 
         public void Update(string street, string city, string state, 

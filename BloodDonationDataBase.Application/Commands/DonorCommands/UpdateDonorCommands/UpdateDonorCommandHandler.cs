@@ -1,5 +1,6 @@
-﻿using BloodDonationDataBase.Application.Services;
+﻿using BloodDonationDataBase.Application.Dtos;
 using BloodDonationDataBase.Domain.IRepositories;
+using BloodDonationDataBase.Domain.IServices;
 using BloodDonationDataBase.Domain.Models;
 using MediatR;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BloodDonationDataBase.Application.Commands.DonorCommands.UpdateDonorCommands
 {
-    public class UpdateDonorCommandHandler : IRequestHandler<UpdateDonorCommand, Donor>
+    public class UpdateDonorCommandHandler : IRequestHandler<UpdateDonorCommand, ResultViewModel<int>>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IAddressZipCode _addressZipCode;
@@ -21,7 +22,7 @@ namespace BloodDonationDataBase.Application.Commands.DonorCommands.UpdateDonorCo
             _addressZipCode = addressZipCode;
         }
 
-        public async Task<Donor> Handle(UpdateDonorCommand request, CancellationToken cancellationToken)
+        public async Task<ResultViewModel<int>> Handle(UpdateDonorCommand request, CancellationToken cancellationToken)
         {
             var donor = await _unitOfWork.DonorRepository.GetById(request.Id);
             donor.Update(request.Name, request.Email, request.DateOfBirth, request.Gender,
@@ -38,7 +39,7 @@ namespace BloodDonationDataBase.Application.Commands.DonorCommands.UpdateDonorCo
             await _unitOfWork.AddressRepository.Update(address);
             await _unitOfWork.Commit();
 
-            return donor;
+            return ResultViewModel<int>.Success(donor.Id);
         }
     }
 }

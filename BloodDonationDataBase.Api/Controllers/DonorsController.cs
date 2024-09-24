@@ -1,54 +1,103 @@
 ﻿using BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCommands;
+using BloodDonationDataBase.Application.Commands.DonorCommands.DeleteDonorCommands;
 using BloodDonationDataBase.Application.Commands.DonorCommands.UpdateDonorCommands;
-using BloodDonationDataBase.Application.Services;
+using BloodDonationDataBase.Application.Queries.DonorQueries;
 using BloodDonationDataBase.Domain.IRepositories;
 using BloodDonationDataBase.Domain.Models;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace BloodDonationDataBase.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class DonorsController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly IUnitOfWork _unitOfWork;
 
-        public DonorsController(IMediator mediator, IUnitOfWork unitOfWork)
+        public DonorsController(IMediator mediator)
         {
             _mediator = mediator;
-            _unitOfWork = unitOfWork;
         }
 
         [HttpPost]
         public async Task<IActionResult> Post(CreateDonorCommand donor)
+        {
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var result = await _mediator.Send(donor);
+
+            if (!result.IsSuccess)
+            {
+                return BadRequest(result.Message);
+            }
+
+            return Ok();
+        }
+
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetId(int id)
+        {
+            var query = new DonorByIdQuery(id);
+
+            var result = await _mediator.Send(query);
+            if (!result.IsSuccess)
+            {
+                return BadRequest(result.Message);
+            }
+
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll([FromQuery] ParametrosPaginacao parametrosPaginacao)
+        {
+            var query = new DonorListQuery(parametrosPaginacao.PageNumber, parametrosPaginacao.PageSize);
+            var result = await _mediator.Send(query);
+            if (!result.IsSuccess)
+            {
+                return NotFound(result.Message);
+            }
+
+            return Ok(result);
+        }
+
+
+        [HttpPut]
+        public async Task<IActionResult> Update(UpdateDonorCommand update)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var createDonor = await _mediator.Send(donor);
+            var result = await _mediator.Send(update);
+
+            if (!result.IsSuccess)
+            {
+                return BadRequest(result.Message);
+            }
 
             return Ok();
-            
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update(UpdateDonorCommand update)
+        [HttpDelete]
+        public async Task<IActionResult> Delete(DeleteDonorCommand deleteDonor)
         {
-            var updateDonor = await _mediator.Send(update);
+            var result = await _mediator.Send(deleteDonor);
+
+            if (!result.IsSuccess)
+            {
+                return BadRequest(result.Message);
+            }
 
             return NoContent();
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> GetId(int id)
-        {
-            var donor = await _unitOfWork.DonorRepository.GetById(id);
-            return Ok(donor);
         }
     }
 }

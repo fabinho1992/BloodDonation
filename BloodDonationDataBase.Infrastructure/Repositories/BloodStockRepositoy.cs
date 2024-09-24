@@ -32,10 +32,11 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
                 .Take(paginacao.PageSize).ToListAsync();
         }
 
-        public async Task<BloodStock?> GetBloodType(BloodType bloodType)
+        public async Task<BloodStock?> GetBloodType(BloodType bloodType, FactorRh factorRh)
         {
-            var donors = await _DbConext.BloodStocks.SingleOrDefaultAsync(b => b.BloodType == bloodType);
-
+            var donors = await _DbConext.BloodStocks.Where(e => e.BloodType == bloodType && e.FactorRh == factorRh)
+                .FirstOrDefaultAsync();
+                            
             return donors;
         }
     }
