@@ -13,7 +13,7 @@ namespace BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonor
     public class DonorResponse
     {
         public DonorResponse(string name, string email, int age, Gender gender, double weight,
-                    BloodType bloodType, FactorRh factorRh, AddressResponse addressResponse, List<DonationResponse> donations)
+                    BloodType bloodType, FactorRh factorRh, DateTime? lastDonation, AddressResponse addressResponse, List<DonationResponseToDonor> donations)
         {
             Name = name;
             Email = email;
@@ -22,6 +22,7 @@ namespace BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonor
             Weight = weight;
             BloodType = bloodType;
             FactorRh = factorRh;
+            LastDonationDate = lastDonation;
             AddressResponse = addressResponse;
             Donations = donations;
         }
@@ -33,8 +34,9 @@ namespace BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonor
         public double Weight { get; private set; }
         public BloodType BloodType { get; private set; }
         public FactorRh FactorRh { get; set; }
+        public DateTime? LastDonationDate { get; private set; }
         public AddressResponse AddressResponse { get; set; }
-        public List<DonationResponse> Donations { get; set; }
+        public List<DonationResponseToDonor> Donations { get; set; }
 
     }
 }

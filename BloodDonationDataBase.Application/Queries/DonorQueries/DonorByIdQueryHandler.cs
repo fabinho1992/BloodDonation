@@ -33,15 +33,15 @@ namespace BloodDonationDataBase.Application.Queries.DonorQueries
 
             var addressResponse = new AddressResponse(donor.Address.Street, donor.Address.City, donor.Address.State,
                     donor.ZipCode, donor.Address.Complement);
-            var donationsList = new List<DonationResponse>();
+            var donationsList = new List<DonationResponseToDonor>();
             foreach (var donation in donor.Donations)
             {
-                var newDonation = new DonationResponse(donation.DateDonation, donation.QuantityMl);
+                var newDonation = new DonationResponseToDonor(donation.DateDonation, donation.QuantityMl);
                 donationsList.Add(newDonation);
             }
 
             var donorResponse = new DonorResponse(donor.Name, donor.Email, donor.Age, 
-                    donor.Gender, donor.Weight, donor.BloodType, donor.FactorRh, addressResponse, donationsList);
+                    donor.Gender, donor.Weight, donor.BloodType, donor.FactorRh, donor.LastDonation, addressResponse, donationsList);
 
 
             return ResultViewModel<DonorResponse>.Success(donorResponse);

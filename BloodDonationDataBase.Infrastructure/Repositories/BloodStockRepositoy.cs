@@ -25,11 +25,9 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
             await _DbConext.BloodStocks.AddAsync(bloodStock);
         }
 
-        public async Task<IEnumerable<BloodStock>> GetAll(ParametrosPaginacao paginacao)
+        public async Task<IEnumerable<BloodStock>> GetAll()
         {
-            return await _DbConext.BloodStocks.AsNoTracking().OrderBy(a => a.Id)
-                .Skip((paginacao.PageNumber - 1) * paginacao.PageSize)
-                .Take(paginacao.PageSize).ToListAsync();
+            return await _DbConext.BloodStocks.AsNoTracking().ToListAsync();
         }
 
         public async Task<BloodStock?> GetBloodType(BloodType bloodType, FactorRh factorRh)

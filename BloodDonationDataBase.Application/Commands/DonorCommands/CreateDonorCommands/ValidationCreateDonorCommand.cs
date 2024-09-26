@@ -26,6 +26,11 @@ namespace BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCo
                 return ResultViewModel<int>.Error("ZipCode not found");
             }
 
+            if (request.Weight <= 50) 
+            {
+                return ResultViewModel<int>.Error("weight must be greater than 50kg");
+            }
+
             return await next();
         }
     }

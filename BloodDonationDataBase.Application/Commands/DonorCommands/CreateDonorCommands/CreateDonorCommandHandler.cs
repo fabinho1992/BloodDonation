@@ -27,6 +27,7 @@ namespace BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCo
             var donor = new Donor(request.Name,request.Email,request.DateOfBirth,
                 request.Gender,request.Weight,request.BloodType,request.FactorRh,request.ZipCode);
             await _unitOfWork.DonorRepository.Create(donor);
+            await _unitOfWork.Commit();
 
             var zipCode = await _addressZipCode.SearchZipCode(donor.ZipCode);
             var address = new Address(street: zipCode.Logradouro, city: zipCode.Localidade, state: zipCode.Uf,

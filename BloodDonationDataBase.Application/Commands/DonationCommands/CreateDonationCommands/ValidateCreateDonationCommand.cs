@@ -35,7 +35,7 @@ namespace BloodDonationDataBase.Application.Commands.DonationCommands.CreateDona
                 return ResultViewModel<int>.Error("Donor must be of legal age");
             }
 
-            if (donor.Gender == Gender.F && donor.LastDonation <= DateTime.Now.AddDays(-90))
+            if (donor.Gender == Gender.F && donor.LastDonation >= DateTime.Now.AddDays(-90))
             {
                 return ResultViewModel<int>.Error("Donations can only be made every 90 days");
             }

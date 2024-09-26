@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonation
 {
-    public class DonationResponse
+    public class DonationResponseToDonor
     {
-        public DonationResponse(DateTime dateDonation, int quantityMl)
+        public DonationResponseToDonor(DateTime dateDonation, int quantityMl)
         {
-            DateDonation = dateDonation;
+            DateDonation = dateDonation.ToString("dd/MM/yyyy");
             QuantityMl = quantityMl;
         }
 
-        public DateTime DateDonation { get; private set; }
+        public string DateDonation { get; private set; }
         public int QuantityMl { get; private set; }
     }
 }

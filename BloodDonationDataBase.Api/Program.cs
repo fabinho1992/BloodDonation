@@ -1,4 +1,5 @@
 
+using Academia.WebApi.ErrosMiddleware;
 using BloodDonationDataBase.Extensions.Dependencies;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,6 +22,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseMiddleware(typeof(ErroMiddleware));
 
 app.UseHttpsRedirection();
 

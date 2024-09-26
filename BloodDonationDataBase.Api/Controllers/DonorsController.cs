@@ -1,12 +1,16 @@
 ﻿using BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCommands;
 using BloodDonationDataBase.Application.Commands.DonorCommands.DeleteDonorCommands;
 using BloodDonationDataBase.Application.Commands.DonorCommands.UpdateDonorCommands;
+using BloodDonationDataBase.Application.Dtos;
+using BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonor;
 using BloodDonationDataBase.Application.Queries.DonorQueries;
 using BloodDonationDataBase.Domain.IRepositories;
 using BloodDonationDataBase.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace BloodDonationDataBase.Api.Controllers
 {
@@ -37,10 +41,11 @@ namespace BloodDonationDataBase.Api.Controllers
                 return BadRequest(result.Message);
             }
 
-            return Ok();
+            return CreatedAtAction(nameof(GetId), new { id = result.Data }, donor);
         }
 
-
+        [ProducesResponseType(typeof(DonorResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetId(int id)
         {

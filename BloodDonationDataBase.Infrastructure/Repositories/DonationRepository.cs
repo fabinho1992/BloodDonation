@@ -33,7 +33,7 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
 
         public async Task<IEnumerable<Donation>> GetAll(ParametrosPaginacao paginacao)
         {
-            return await _dbContext.Donations.AsNoTracking().OrderBy(a => a.Id)
+            return await _dbContext.Donations.Include(x => x.Donor).OrderBy(a => a.Id)
                 .Skip((paginacao.PageNumber - 1) * paginacao.PageSize)
                 .Take(paginacao.PageSize).ToListAsync();
         }
