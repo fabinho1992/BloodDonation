@@ -21,6 +21,8 @@ namespace BloodDonationDataBase.Tests.Aplication.Commands
         {
             // Arrange
             var mockRepostory = new Mock<IUnitOfWork>();
+            var mockDonorRepository = new Mock<IDonorRepository>();
+            var mockAddressRepository = new Mock<IAddressRepository>();
             var mockRepositoryAddress = new Mock<IAddressZipCode>(); // Mock do IAddressZipCode
             var newDonorCommand = new CreateDonorCommand(
                 "Fabio", "fabio@gmail.com", new DateTime(1992, 01, 18), Gender.M,
@@ -35,8 +37,9 @@ namespace BloodDonationDataBase.Tests.Aplication.Commands
                 Cep = "05820200"
             };
 
-            // Configurar o mock para retornar o ZipCode esperado
+            mockRepostory.Setup(x => x.DonorRepository.Create(It.IsAny<Donor>()));
             mockRepositoryAddress.Setup(x => x.SearchZipCode(newDonorCommand.ZipCode).Result).Returns(expectedZipCode);
+            mockRepostory.Setup(x => x.AddressRepository.Create(It.IsAny<Address>()));
 
             var createDonorCommandHandler = new CreateDonorCommandHandler(mockRepostory.Object, mockRepositoryAddress.Object); // Injetar o mock
 
