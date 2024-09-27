@@ -60,7 +60,7 @@ namespace BloodDonationDataBase.Api.Controllers
             return Ok(result);
         }
 
-        [HttpPut]
+        [HttpPut("Blood withDrawal")]
         public async Task<IActionResult> TakeBlood(BloodWithDrawalComand withDrawalComand)
         {
             var result = await _mediator.Send(withDrawalComand);

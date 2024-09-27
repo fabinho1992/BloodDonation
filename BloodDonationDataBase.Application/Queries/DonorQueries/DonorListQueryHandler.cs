@@ -1,5 +1,6 @@
 ﻿using BloodDonationDataBase.Application.Dtos;
 using BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonor;
+using BloodDonationDataBase.Domain.Errors;
 using BloodDonationDataBase.Domain.IRepositories;
 using MediatR;
 using System;
@@ -24,7 +25,7 @@ namespace BloodDonationDataBase.Application.Queries.DonorQueries
             var donorList = await _unitOfWork.DonorRepository.GetAll(request);
             if (donorList is null)
             {
-                return ResultViewModel<List<DonorResponseList>>.Error("Donors not found.");
+                return ResultViewModel<List<DonorResponseList>>.Error(DonorErrors.Notfound.ToString());
             }
 
             var newDonorsList = new List<DonorResponseList>();

@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodDonationDataBase.Domain", "BloodDonationDataBase.Domain\BloodDonationDataBase.Domain.csproj", "{B5799FE6-04F4-4F17-A8B2-2979DF94B8E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BloodDonationDataBase.Domain", "BloodDonationDataBase.Domain\BloodDonationDataBase.Domain.csproj", "{B5799FE6-04F4-4F17-A8B2-2979DF94B8E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodDonationDataBase.Application", "BloodDonationDataBase.Application\BloodDonationDataBase.Application.csproj", "{CABFD8F1-7FC4-4637-958C-FBB82E135548}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BloodDonationDataBase.Application", "BloodDonationDataBase.Application\BloodDonationDataBase.Application.csproj", "{CABFD8F1-7FC4-4637-958C-FBB82E135548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodDonationDataBase.Infrastructure", "BloodDonationDataBase.Infrastructure\BloodDonationDataBase.Infrastructure.csproj", "{C64D4641-D677-4761-B571-B35A67454909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BloodDonationDataBase.Infrastructure", "BloodDonationDataBase.Infrastructure\BloodDonationDataBase.Infrastructure.csproj", "{C64D4641-D677-4761-B571-B35A67454909}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodDonationDataBase.Api", "BloodDonationDataBase.Api\BloodDonationDataBase.Api.csproj", "{8692B9B3-1BD2-44CD-8CD9-7E754A9DECA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BloodDonationDataBase.Api", "BloodDonationDataBase.Api\BloodDonationDataBase.Api.csproj", "{8692B9B3-1BD2-44CD-8CD9-7E754A9DECA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodDonationDataBase.Extensions", "BloodDonationDataBase.Extensions\BloodDonationDataBase.Extensions.csproj", "{23A2CFFB-E864-4C13-83A0-4852FD518355}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BloodDonationDataBase.Extensions", "BloodDonationDataBase.Extensions\BloodDonationDataBase.Extensions.csproj", "{23A2CFFB-E864-4C13-83A0-4852FD518355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodDonationDataBase.Tests", "BloodDonationDataBase.Tests\BloodDonationDataBase.Tests.csproj", "{4266A272-5DBA-4E0A-A8EE-5D6A0695D3D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{23A2CFFB-E864-4C13-83A0-4852FD518355}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23A2CFFB-E864-4C13-83A0-4852FD518355}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23A2CFFB-E864-4C13-83A0-4852FD518355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4266A272-5DBA-4E0A-A8EE-5D6A0695D3D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4266A272-5DBA-4E0A-A8EE-5D6A0695D3D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4266A272-5DBA-4E0A-A8EE-5D6A0695D3D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4266A272-5DBA-4E0A-A8EE-5D6A0695D3D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

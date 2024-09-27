@@ -2,6 +2,7 @@
 using BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsAddress;
 using BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonation;
 using BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonor;
+using BloodDonationDataBase.Domain.Errors;
 using BloodDonationDataBase.Domain.IRepositories;
 using BloodDonationDataBase.Domain.Models;
 using MediatR;
@@ -28,7 +29,7 @@ namespace BloodDonationDataBase.Application.Queries.DonorQueries
             var donor = await _unitOfWork.DonorRepository.GetById(request.Id);
             if (donor is null)
             {
-                return ResultViewModel<DonorResponse>.Error($"Donor with ID {request.Id} not found");
+                return ResultViewModel<DonorResponse>.Error(DonorErrors.Notfound.ToString());
             }
 
             var addressResponse = new AddressResponse(donor.Address.Street, donor.Address.City, donor.Address.State,

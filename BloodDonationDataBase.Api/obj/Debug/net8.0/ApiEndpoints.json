@@ -28,7 +28,7 @@
   {
     "ContainingType": "BloodDonationDataBase.Api.Controllers.BloodStockController",
     "Method": "TakeBlood",
-    "RelativePath": "BloodStock",
+    "RelativePath": "BloodStock/Blood withDrawal",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
