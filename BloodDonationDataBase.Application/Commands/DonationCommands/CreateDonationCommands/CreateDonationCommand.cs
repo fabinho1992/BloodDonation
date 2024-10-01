@@ -11,15 +11,13 @@ namespace BloodDonationDataBase.Application.Commands.DonationCommands.CreateDona
 {
     public class CreateDonationCommand : IRequest<ResultViewModel<int>>
     {
-        public CreateDonationCommand(int donorId, DateTime dateDonation, int quantityMl)
+        public CreateDonationCommand(int donorId, int quantityMl)
         {
             DonorId = donorId;
-            DateDonation = dateDonation;
             QuantityMl = quantityMl;
         }
 
         public int DonorId { get; private set; }
-        public DateTime DateDonation { get; private set; }
         public int QuantityMl { get; private set; }
     }
 }

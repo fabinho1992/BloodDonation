@@ -9,10 +9,10 @@ namespace BloodDonationDataBase.Domain.Models
 {
     public class Donation : BaseModel
     {
-        public Donation(int donorId, DateTime dateDonation, int quantityMl)
+        public Donation(int donorId, int quantityMl)
         {
             DonorId = donorId;
-            DateDonation = dateDonation;
+            DateDonation = DateTime.Now;
             QuantityMl = quantityMl;
         }
 

@@ -11,14 +11,16 @@ namespace BloodDonationDataBase.Application.Commands.BloodStockCommands.CreateBl
 {
     public class CreateBloodStockCommand : IRequest<BloodStock>
     {
-        public CreateBloodStockCommand(BloodType bloodType, FactorRh factorRh)
+        public CreateBloodStockCommand(BloodType bloodType, FactorRh factorRh, int quantityMl)
         {
             BloodType = bloodType;
             FactorRh = factorRh;
+            QuantityMl = quantityMl;
         }
 
         public BloodType BloodType { get; private set; }
         public FactorRh FactorRh { get; private set; }
+        public int QuantityMl { get; private set; }
         
     }
 }

@@ -24,11 +24,11 @@ namespace BloodDonationDataBase.Application.Commands.DonationCommands.CreateDona
             }
 
             var donor = await _unitOfWork.DonorRepository.GetById(request.DonorId);
-            var bloodStock = await _unitOfWork.BloodStockRepository.GetBloodType(donor.BloodType, donor.FactorRh);
-            if (bloodStock is null)
-            {
-                return ResultViewModel<int>.Error("BloodType the FactorRh not found in the database");
-            }
+            //var bloodStock = await _unitOfWork.BloodStockRepository.GetBloodType(donor.BloodType, donor.FactorRh);
+            //if (bloodStock is null)
+            //{
+            //    return ResultViewModel<int>.Error("BloodType the FactorRh not found in the database");
+            //}
 
             if (donor.Age < 18)
             {

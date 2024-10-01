@@ -22,9 +22,7 @@ namespace BloodDonationDataBase.Application.FluentValidation.DonationValidations
                 .InclusiveBetween(420, 470)
                 .WithMessage("Donation must be between {From} and {To} ml");
 
-            RuleFor(d => d.DateDonation).NotNull()
-                .WithMessage("DateDonation cannot be null")
-                .LessThanOrEqualTo(DateTime.Now).WithMessage("Date donation must be less than or equal to the current date");
+            
         }
     }
 }

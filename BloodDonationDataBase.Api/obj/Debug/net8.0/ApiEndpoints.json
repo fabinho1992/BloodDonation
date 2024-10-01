@@ -232,12 +232,8 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonor.DonorResponse",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       },
       {

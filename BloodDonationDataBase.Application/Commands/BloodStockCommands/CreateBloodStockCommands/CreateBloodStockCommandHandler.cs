@@ -20,7 +20,7 @@ namespace BloodDonationDataBase.Application.Commands.BloodStockCommands.CreateBl
 
         public async Task<BloodStock> Handle(CreateBloodStockCommand request, CancellationToken cancellationToken)
         {
-            var newStock = new BloodStock(request.BloodType, request.FactorRh);
+            var newStock = new BloodStock(request.BloodType, request.FactorRh, request.QuantityMl);
             await _unitOfWork.BloodStockRepository.Create(newStock);
             await _unitOfWork.Commit();
 

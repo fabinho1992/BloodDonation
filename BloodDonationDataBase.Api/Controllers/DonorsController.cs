@@ -47,6 +47,7 @@ namespace BloodDonationDataBase.Api.Controllers
 
         [ProducesResponseType(typeof(DonorResponse), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetId(int id)
         {

@@ -20,4 +20,8 @@
     <ProjectReference Include="..\BloodDonationDataBase.Extensions\BloodDonationDataBase.Extensions.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Reports\" />
+  </ItemGroup>
+
 </Project>

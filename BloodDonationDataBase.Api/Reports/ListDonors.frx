@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="09/30/2024 23:17:02" ReportInfo.Modified="09/30/2024 23:42:26" ReportInfo.CreatorVersion="2024.2.0.0">
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqM7gJFg/iaLrqMhRfGy5lGvAx302aU89ENBlhJoRP4RpyUF6EklTDbIUAs6k5G1AHXrgraKCgisxv8ovueijHEbZ0CGoKfK/QR2ffti1SKmpnH4q6RiRnNi+kIobKvWxSGDArvWHq72bxCvNepwQh2IAgjpNSW8lhN94MLHqHHz7mhIkhCTS+b7/I0h72xJAtklzYnzoUmXSulhOXv9HAB2zDcTnpezEuIOSoRKY2ND0=">
+      <TableDataSource Name="Donors" DataType="System.Int32" Enabled="true" TableName="Donors">
+        <Column Name="Id" DataType="System.Int32"/>
+        <Column Name="Name" DataType="System.String"/>
+        <Column Name="Email" DataType="System.String"/>
+        <Column Name="DateOfBirth" Enabled="false" DataType="System.DateTime"/>
+        <Column Name="Age" DataType="System.Int32"/>
+        <Column Name="Gender" Enabled="false" DataType="System.String"/>
+        <Column Name="Weight" Enabled="false" DataType="System.Double"/>
+        <Column Name="BloodType" DataType="System.String"/>
+        <Column Name="FactorRh" DataType="System.String"/>
+        <Column Name="ZipCode" Enabled="false" DataType="System.String"/>
+        <Column Name="LastDonation" Enabled="false" DataType="System.DateTime"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8" Fill.Color="Gainsboro">
+      <TextObject Name="Text1" Left="245.7" Top="9.45" Width="189" Height="18.9" Text="Lista de doadores" HorzAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text2" Top="18.9" Width="94.5" Height="18.9" Text="[Date]" Font="Arial, 10pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35">
+      <TextObject Name="Text4" Top="9.45" Width="94.5" Height="18.9" Text="Id" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text6" Left="132.3" Top="9.45" Width="94.5" Height="18.9" Text="Name" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text8" Left="255.15" Top="9.45" Width="94.5" Height="18.9" Text="Email" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text10" Left="368.55" Top="9.45" Width="94.5" Height="18.9" Text="Age" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text12" Left="491.4" Top="9.45" Width="94.5" Height="18.9" Text="BloodType" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text14" Left="614.25" Top="9.45" Width="94.5" Height="18.9" Text="FactorRh" HorzAlign="Center" Font="Arial, 10pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="75.6" DataSource="Donors">
+      <TextObject Name="Text3" Top="37.8" Width="94.5" Height="18.9" Text="[Donors.Id]" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Left="132.3" Top="37.8" Width="94.5" Height="18.9" Text="[Donors.Name]" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text7" Left="255.15" Top="37.8" Width="94.5" Height="18.9" Text="[Donors.Email]" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text9" Left="368.55" Top="37.8" Width="94.5" Height="18.9" Text="[Donors.Age]" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text11" Left="491.4" Top="37.8" Width="94.5" Height="18.9" Text="[Donors.BloodType]" HorzAlign="Center" Font="Arial, 10pt"/>
+      <TextObject Name="Text13" Left="614.25" Top="37.8" Width="94.5" Height="18.9" Text="[Donors.FactorRh]" HorzAlign="Center" Font="Arial, 10pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="153.75" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>

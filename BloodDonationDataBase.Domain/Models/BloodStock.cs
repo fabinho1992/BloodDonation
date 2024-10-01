@@ -9,11 +9,11 @@ namespace BloodDonationDataBase.Domain.Models
 {
     public class BloodStock : BaseModel
     {
-        public BloodStock(BloodType bloodType, FactorRh factorRh)
+        public BloodStock(BloodType bloodType, FactorRh factorRh, int quantityMl)
         {
             BloodType = bloodType;
             FactorRh = factorRh;
-            QuantityMl = 0;
+            QuantityMl = quantityMl;
         }
 
         public BloodType BloodType { get; private set; }
