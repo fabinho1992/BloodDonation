@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BloodDonationDataBase.Tests
-build_property.ProjectDir = C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonationDatabase\BloodDonationDataBase.Tests\
+build_property.ProjectDir = C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Tests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
