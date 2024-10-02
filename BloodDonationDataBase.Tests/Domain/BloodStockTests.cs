@@ -16,7 +16,8 @@ namespace BloodDonationDataBase.Tests.Domain
             //Arrange
             var newBloodStock = new BloodStock(
                 bloodType: BloodType.A,
-                factorRh: FactorRh.Positivo
+                factorRh: FactorRh.Positivo,
+                quantityMl: 450
                 );
 
             //Act
@@ -34,7 +35,8 @@ namespace BloodDonationDataBase.Tests.Domain
             //Arrange
             var newBloodStock = new BloodStock(
                 bloodType: BloodType.A,
-                factorRh: FactorRh.Positivo
+                factorRh: FactorRh.Positivo,
+                quantityMl: 450
                 );
 
             //Act

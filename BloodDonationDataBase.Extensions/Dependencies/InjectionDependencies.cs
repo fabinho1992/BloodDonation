@@ -16,6 +16,7 @@ using BloodDonationDataBase.Application.Dtos;
 using BloodDonationDataBase.Application.Commands.DonationCommands.CreateDonationCommands;
 using BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCommands;
 using BloodDonationDataBase.Application.Commands.DonorCommands.UpdateDonorCommands;
+using FastReport.Data;
 
 namespace BloodDonationDataBase.Extensions.Dependencies
 {
@@ -49,7 +50,9 @@ namespace BloodDonationDataBase.Extensions.Dependencies
             //    return connection;
             //});
 
-
+            //FastReport
+            services.AddFastReport();
+            FastReport.Utils.RegisteredObjects.AddConnection(typeof(MsSqlDataConnection));
 
             //InjectionDependency
             services.AddScoped<IDonorRepository, DonorRepository>();

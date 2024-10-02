@@ -6,6 +6,7 @@
     <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.options\8.0.0\buildTransitive\net6.0\Microsoft.Extensions.Options.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.options\8.0.0\buildTransitive\net6.0\Microsoft.Extensions.Options.targets')" />
     <Import Project="$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\8.0.0\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.logging.abstractions\8.0.0\buildTransitive\net6.0\Microsoft.Extensions.Logging.Abstractions.targets')" />
+    <Import Project="$(NuGetPackageRoot)fastreport.data.mssql\2024.2.14\buildTransitive\net6.0\FastReport.Data.MsSql.targets" Condition="Exists('$(NuGetPackageRoot)fastreport.data.mssql\2024.2.14\buildTransitive\net6.0\FastReport.Data.MsSql.targets')" />
     <Import Project="$(NuGetPackageRoot)coverlet.collector\6.0.0\build\netstandard1.0\coverlet.collector.targets" Condition="Exists('$(NuGetPackageRoot)coverlet.collector\6.0.0\build\netstandard1.0\coverlet.collector.targets')" />
   </ImportGroup>
 </Project>

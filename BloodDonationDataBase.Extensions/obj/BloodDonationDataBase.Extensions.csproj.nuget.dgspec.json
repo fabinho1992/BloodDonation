@@ -57,6 +57,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FastReport.Data.MsSql": {
+              "target": "Package",
+              "version": "[2024.2.14, )"
+            },
+            "FastReport.OpenSource": {
+              "target": "Package",
+              "version": "[2024.2.14, )"
+            },
+            "FastReport.OpenSource.Export.PdfSimple": {
+              "target": "Package",
+              "version": "[2024.2.14, )"
+            },
+            "FastReport.OpenSource.Web": {
+              "target": "Package",
+              "version": "[2024.2.14, )"
+            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[11.3.0, )"

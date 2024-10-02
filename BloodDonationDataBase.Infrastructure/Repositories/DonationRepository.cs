@@ -45,6 +45,11 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
                 
         }
 
+        public async Task<IEnumerable<Donation>> GetAllReports()
+        {
+            return await _dbContext.Donations.ToListAsync();
+        }
+
         public async Task<Donation?> GetById(int id)
         {
             var Donor = await _dbContext.Donations.Include(a => a.Donor)

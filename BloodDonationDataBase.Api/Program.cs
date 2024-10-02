@@ -48,6 +48,10 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseStaticFiles();
+
+app.UseFastReport();
+
 app.MapControllers();
 
 app.Run();
