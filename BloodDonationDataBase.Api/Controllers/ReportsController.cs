@@ -64,5 +64,50 @@ namespace BloodDonationDataBase.Api.Controllers
 
             webReport.Report.RegisterData(donationsDataTable, "List Donations");
         }
+
+        [HttpGet("Donors report")]
+        public async Task<IActionResult> DonorsReport()
+        {
+            var donations = new DonationListToReportQuery();
+            if (donations is null)
+            {
+                return NotFound();
+            }
+            var result = await _mediator.Send(donations);
+
+            var webReport = new WebReport();
+            webReport.Report.Load(Path.Combine(_webHostEnvironment.ContentRootPath, "Reports", "ListDonors.frx"));
+
+            GenerateDataTableReport(result, webReport);
+
+            webReport.Report.Prepare();
+
+            using MemoryStream stream = new MemoryStream();
+            webReport.Report.Export(new PDFSimpleExport(), stream);
+            stream.Flush();
+            byte[] arrayReport = stream.ToArray();
+            return File(arrayReport, "application/zip", "DonationsReport.pdf");
+
+        }
+
+        private static void GenerateDataTableReportDonors(IEnumerable<Donor> donors, WebReport webReport)
+        {
+            var donationsDataTable = new DataTable();
+
+            donationsDataTable.Columns.Add("Id", typeof(int));
+            donationsDataTable.Columns.Add("Name", typeof(string));
+            donationsDataTable.Columns.Add("Email", typeof(string));
+            donationsDataTable.Columns.Add("Age", typeof(int));
+            donationsDataTable.Columns.Add("BloodType", typeof(string));
+            donationsDataTable.Columns.Add("FactorRh", typeof(string));
+
+            foreach (var item in donors)
+            {
+                donationsDataTable.Rows.Add(item.Id, item.Name, item.Email, item.Age, item.BloodType, item.FactorRh);
+            }
+
+            webReport.Report.RegisterData(donationsDataTable, "List Donations");
+        }
+
     }
 }

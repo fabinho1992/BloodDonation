@@ -10,6 +10,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BloodDonationDataBase.Api.Controllers.ReportsController",
+    "Method": "DonorsReport",
+    "RelativePath": "api/Reports/Donors report",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BloodDonationDataBase.Api.Controllers.BloodStockController",
     "Method": "Post",
     "RelativePath": "BloodStock",

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report ScriptLanguage="CSharp" ReportInfo.Created="10/01/2024 11:29:35" ReportInfo.Modified="10/02/2024 14:57:44" ReportInfo.CreatorVersion="2024.2.0.0">
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/01/2024 11:29:35" ReportInfo.Modified="10/02/2024 19:51:53" ReportInfo.CreatorVersion="2024.2.0.0">
   <Dictionary>
-    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqM7gJFg/iaLrqMhRfGy5lGnCTCE1D4aPvuZT2nExEB7PdY4MikhYVnChZzF0YQPWd9ymAtKrIoLdWE0ZPC94Bj3I010SaBtzc6f2sOszDPT7BRILrvud/lU89MxVVs4ldLI8qhPu547vNt1P+0Dbjxe0xGv2icwuI0bztjDS7e5SWqrzmwcIaZwxcazGwozUfahsm6jKu+1JTWC8MyazXCcC2HwfBEyVlNS1l9eRzTpk=">
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqM7gJFg/iaLrqMhRfGy5lGvAx302aU89ENBlhJoRP4RpyUF6EklTDbIUAs6k5G1AHXrgraKCgisxv8ovueijHEbZ0CGoKfK/QR2ffti1SKmpnH4q6RiRnNi+kIobKvWxSGDArvWHq72bxCvNepwQh2IAgjpNSW8lhN94MLHqHHz7mhIkhCTS+b7/I0h72xJAtklzYnzoUmXSulhOXv9HAByGdAg7zKe0z+j90pzrt8OY=">
       <TableDataSource Name="Donations" DataType="System.Int32" Enabled="true" TableName="Donations">
         <Column Name="Id" DataType="System.Int32"/>
         <Column Name="DonorId" DataType="System.Int32"/>
@@ -16,12 +16,12 @@
       <TextObject Name="Text10" Left="9.45" Top="18.9" Width="94.5" Height="18.9" Text="[Date]" Font="Arial, 10pt, style=Italic"/>
     </ReportTitleBand>
     <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="37.8" Fill.Color="RosyBrown">
-      <TextObject Name="Text3" Left="37.8" Top="9.45" Width="94.5" Height="18.9" Text="Id" HorzAlign="Center" Font="Arial, 12pt"/>
-      <TextObject Name="Text5" Left="217.35" Top="9.45" Width="94.5" Height="18.9" Text="DonorId" HorzAlign="Center" Font="Arial, 12pt"/>
-      <TextObject Name="Text7" Left="359.1" Top="9.45" Width="94.5" Height="18.9" Text="QuantityMl" HorzAlign="Center" Font="Arial, 12pt"/>
-      <TextObject Name="Text9" Left="529.2" Top="9.45" Width="132.3" Height="18.9" Text="DateDonation" HorzAlign="Center" Font="Arial, 12pt"/>
+      <TextObject Name="Text3" Left="37.8" Top="9.45" Width="94.5" Height="18.9" Text="Id" HorzAlign="Center" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Text5" Left="217.35" Top="9.45" Width="94.5" Height="18.9" Text="DonorId" HorzAlign="Center" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Text7" Left="359.1" Top="9.45" Width="94.5" Height="18.9" Text="QuantityMl" HorzAlign="Center" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Text9" Left="529.2" Top="9.45" Width="132.3" Height="18.9" Text="DateDonation" HorzAlign="Center" Font="Arial, 12pt, style=Bold"/>
     </PageHeaderBand>
-    <DataBand Name="Data1" Top="83.6" Width="718.2" Height="56.7" DataSource="Donations">
+    <DataBand Name="Data1" Top="83.6" Width="718.2" Height="56.7">
       <TextObject Name="Text2" Left="37.8" Top="18.9" Width="122.85" Height="18.9" Text="[Donations.Id]" HorzAlign="Center" Font="Arial, 12pt"/>
       <TextObject Name="Text4" Left="217.35" Top="18.9" Width="94.5" Height="18.9" Text="[Donations.DonorId]" HorzAlign="Center" Font="Arial, 12pt"/>
       <TextObject Name="Text6" Left="359.1" Top="18.9" Width="113.4" Height="18.9" Text="[Donations.QuantityMl]" HorzAlign="Center" Font="Arial, 12pt"/>

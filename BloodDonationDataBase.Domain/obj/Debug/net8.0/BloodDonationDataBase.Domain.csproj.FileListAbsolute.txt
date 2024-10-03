@@ -22,3 +22,15 @@ C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationD
 C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\refint\BloodDonationDataBase.Domain.dll
 C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\BloodDonationDataBase.Domain.pdb
 C:\Users\Usuario\Desktop\Cursos de Programação\ProjetosMentoria\BloodDonationDatabase\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\ref\BloodDonationDataBase.Domain.dll
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\bin\Debug\net8.0\BloodDonationDataBase.Domain.deps.json
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\bin\Debug\net8.0\BloodDonationDataBase.Domain.dll
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\bin\Debug\net8.0\BloodDonationDataBase.Domain.pdb
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\BloodDonationDataBase.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\BloodDonationDataBase.Domain.AssemblyInfoInputs.cache
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\BloodDonationDataBase.Domain.AssemblyInfo.cs
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\BloodDonationDataBase.Domain.csproj.CoreCompileInputs.cache
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\BloodDonationDataBase.Domain.sourcelink.json
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\BloodDonationDataBase.Domain.dll
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\refint\BloodDonationDataBase.Domain.dll
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\BloodDonationDataBase.Domain.pdb
+C:\AulasAluraBackEnd\ProjetosMentoria\ApiSistemaBancoDeDoacaoDeSangue\BloodDonation\BloodDonationDataBase.Domain\obj\Debug\net8.0\ref\BloodDonationDataBase.Domain.dll
