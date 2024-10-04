@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/03/2024 19:48:39" ReportInfo.Modified="10/03/2024 20:03:35" ReportInfo.CreatorVersion="2024.2.0.0">
+  <Styles Name="Sand">
+    <Style Name="Title" Font="Arial, 12pt, style=Bold"/>
+    <Style Name="Header" Fill.Color="Moccasin" Font="Arial, 10pt, style=Bold"/>
+    <Style Name="Group" Font="Arial, 10pt, style=Bold"/>
+    <Style Name="Data" Font="Arial, 10pt"/>
+    <Style Name="Footer" Fill.Color="Moccasin" Font="Arial, 10pt"/>
+    <Style Name="EvenRows" Fill.Color="FloralWhite" Font="Arial, 10pt"/>
+  </Styles>
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqM7gJFg/iaLrqMhRfGy5lGvAx302aU89ENBlhJoRP4RpyUF6EklTDbIUAs6k5G1AHXrgraKCgisxv8ovueijHEbZ0CGoKfK/QR2ffti1SKmpnH4q6RiRnNi+kIobKvWxSGDArvWHq72bxCvNepwQh2IAgjpNSW8lhN94MLHqHHz7mhIkhCTS+b7/I0h72xJAtklzYnzoUmXSulhOXv9HAB7QJyT0QleCtTFnKyu32Q1c=">
+      <TableDataSource Name="Table" Alias="DbBloodDonation" DataType="System.Int32" Enabled="true" SelectCommand="SELECT &#13;&#10;	 BloodType &#13;&#10;	,FactorRh&#13;&#10;	,Sum(QuantityML) AS QuantityMLAll&#13;&#10;FROM BloodStocks&#13;&#10;GROUP BY&#13;&#10;	 BloodType&#13;&#10;	,FactorRh&#13;&#10;ORDER BY BloodType">
+        <Column Name="BloodType" DataType="System.String"/>
+        <Column Name="FactorRh" DataType="System.String"/>
+        <Column Name="QuantityMLAll" DataType="System.Int32"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Width="718.2" Height="37.8" Dock="Fill" Text="Blood Stock Report" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt, style=Bold" Style="Title"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35">
+      <TextObject Name="Text3" Width="245.7" Height="18.9" Fill.Color="Moccasin" Text="BloodType" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text5" Left="245.7" Width="236.25" Height="18.9" Fill.Color="Moccasin" Text="FactorRh" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text7" Left="481.95" Width="236.25" Height="18.9" Fill.Color="Moccasin" Text="QuantityMLAll" Font="Arial, 10pt, style=Bold" Style="Header"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="18.9" EvenStyle="EvenRows" DataSource="Table">
+      <TextObject Name="Text2" Width="245.7" Height="18.9" Text="[DbBloodDonation.BloodType]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text4" Left="245.7" Width="236.25" Height="18.9" Text="[DbBloodDonation.FactorRh]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text6" Left="481.95" Width="236.25" Height="18.9" Text="[DbBloodDonation.QuantityMLAll]" Font="Arial, 10pt" Style="Data"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="97.05" Width="718.2" Height="18.9">
+      <TextObject Name="Text8" Width="718.2" Height="18.9" Dock="Fill" Fill.Color="Moccasin" Text="[PageN]" HorzAlign="Right" Font="Arial, 10pt" Style="Footer"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>
