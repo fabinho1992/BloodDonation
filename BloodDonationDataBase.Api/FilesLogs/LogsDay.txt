@@ -1,0 +1,18 @@
+Log:
+sexta-feira, 4 de outubro de 2024
+Title Message : List Donors
+Message : Success
+------------------------------------------
+
+Log:
+sexta-feira, 4 de outubro de 2024
+Title Message : List Donors
+Message : Success
+------------------------------------------
+
+Log:
+sexta-feira, 4 de outubro de 2024
+Title Message : Donor null
+Message : Error { Code = Donor.NotFound, Message = The Donor could not be found }
+------------------------------------------
+

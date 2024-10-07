@@ -50,6 +50,14 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
             return await _dbContext.Donations.ToListAsync();
         }
 
+        public async Task<IEnumerable<Donation>> GetAllThirtyDays()
+        {
+            return await _dbContext.Donations.Include(d => d.Donor).
+                Where(d => d.DateDonation >= DateTime.Now.AddDays(-30))
+                .ToListAsync();
+        
+        }
+
         public async Task<Donation?> GetById(int id)
         {
             var Donor = await _dbContext.Donations.Include(a => a.Donor)

@@ -53,5 +53,10 @@ namespace BloodDonationDataBase.Infrastructure.Repositories
 
             return donors;
         }
+
+        public async Task<IEnumerable<Donor>> GetAllReport()
+        {
+            return await _dbContext.Donors.AsNoTracking().ToListAsync();
+        }
     }
 }

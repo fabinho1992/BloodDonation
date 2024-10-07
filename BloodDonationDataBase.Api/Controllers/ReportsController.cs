@@ -1,4 +1,7 @@
-﻿using BloodDonationDataBase.Application.Queries.DonationQueries.DonationListToReportQuerys;
+﻿using BloodDonationDataBase.Application.Queries.BloodStockQueries.BloodStockReportQuery;
+using BloodDonationDataBase.Application.Queries.DonationQueries.DonationListToReportQuerys;
+using BloodDonationDataBase.Application.Queries.DonorQueries.DonorReportQuerys;
+using BloodDonationDataBase.Application.ServiceReport;
 using BloodDonationDataBase.Domain.Models;
 using FastReport;
 using FastReport.Export.PdfSimple;
@@ -16,11 +19,13 @@ namespace BloodDonationDataBase.Api.Controllers
     {
         private readonly IMediator _mediator;
         private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IGenerateDataTableReport _generateDataTableReport;
 
-        public ReportsController(IMediator mediator, IWebHostEnvironment webHostEnvironment)
+        public ReportsController(IMediator mediator, IWebHostEnvironment webHostEnvironment, IGenerateDataTableReport generateDataTableReport)
         {
             _mediator = mediator;
             _webHostEnvironment = webHostEnvironment;
+            _generateDataTableReport = generateDataTableReport;
         }
 
         [HttpGet("Donations report")]
@@ -36,7 +41,7 @@ namespace BloodDonationDataBase.Api.Controllers
             var webReport = new WebReport();
             webReport.Report.Load(Path.Combine(_webHostEnvironment.ContentRootPath, "Reports", "ListDonations.frx"));
 
-            GenerateDataTableReport(result, webReport);
+            _generateDataTableReport.DataTableReportDonations(result, webReport);
 
             webReport.Report.Prepare();
 
@@ -48,37 +53,21 @@ namespace BloodDonationDataBase.Api.Controllers
 
         }
 
-        private static void GenerateDataTableReport(IEnumerable<Donation> donations, WebReport webReport)
-        {
-            var donationsDataTable = new DataTable();
-
-            donationsDataTable.Columns.Add("Id", typeof(int));
-            donationsDataTable.Columns.Add("DonorId", typeof(int));
-            donationsDataTable.Columns.Add("QuantityMl", typeof(int));
-            donationsDataTable.Columns.Add("DateDonation", typeof(DateTime));
-
-            foreach (var item in donations)
-            {
-                donationsDataTable.Rows.Add(item.Id, item.DonorId, item.QuantityMl, item.DateDonation);
-            }
-
-            webReport.Report.RegisterData(donationsDataTable, "List Donations");
-        }
 
         [HttpGet("Donors report")]
         public async Task<IActionResult> DonorsReport()
         {
-            var donations = new DonationListToReportQuery();
-            if (donations is null)
+            var donor = new DonorReportQuery();
+            if (donor is null)
             {
                 return NotFound();
             }
-            var result = await _mediator.Send(donations);
+            var result = await _mediator.Send(donor);
 
             var webReport = new WebReport();
             webReport.Report.Load(Path.Combine(_webHostEnvironment.ContentRootPath, "Reports", "ListDonors.frx"));
 
-            GenerateDataTableReport(result, webReport);
+            _generateDataTableReport.DataTableReportDonors(result, webReport);
 
             webReport.Report.Prepare();
 
@@ -90,39 +79,21 @@ namespace BloodDonationDataBase.Api.Controllers
 
         }
 
-        private static void GenerateDataTableReportDonors(IEnumerable<Donor> donors, WebReport webReport)
-        {
-            var donationsDataTable = new DataTable();
-
-            donationsDataTable.Columns.Add("Id", typeof(int));
-            donationsDataTable.Columns.Add("Name", typeof(string));
-            donationsDataTable.Columns.Add("Email", typeof(string));
-            donationsDataTable.Columns.Add("Age", typeof(int));
-            donationsDataTable.Columns.Add("BloodType", typeof(string));
-            donationsDataTable.Columns.Add("FactorRh", typeof(string));
-
-            foreach (var item in donors)
-            {
-                donationsDataTable.Rows.Add(item.Id, item.Name, item.Email, item.Age, item.BloodType, item.FactorRh);
-            }
-
-            webReport.Report.RegisterData(donationsDataTable, "List Donations");
-        }
 
         [HttpGet("Blood Stock report")]
         public async Task<IActionResult> BloodStockReport()
         {
-            var donations = new DonationListToReportQuery();
-            if (donations is null)
+            var bloodStock = new BloodStockReportQuery();
+            if (bloodStock is null)
             {
                 return NotFound();
             }
-            var result = await _mediator.Send(donations);
+            var result = await _mediator.Send(bloodStock);
 
             var webReport = new WebReport();
             webReport.Report.Load(Path.Combine(_webHostEnvironment.ContentRootPath, "Reports", "BloodStockReport.frx"));
 
-            GenerateDataTableReport(result, webReport);
+            _generateDataTableReport.DataTableReportBloodStock(result, webReport);
 
             webReport.Report.Prepare();
 
@@ -134,22 +105,6 @@ namespace BloodDonationDataBase.Api.Controllers
 
         }
 
-        private static void GenerateDataTableReportBloodStock(IEnumerable<Donor> donors, WebReport webReport)
-        {
-            var donationsDataTable = new DataTable();
-
-            donationsDataTable.Columns.Add("Blood Type", typeof(int));
-            donationsDataTable.Columns.Add("Factor Rh", typeof(string));
-            donationsDataTable.Columns.Add("Quantity ml", typeof(string));
-            
-
-            foreach (var item in donors)
-            {
-                donationsDataTable.Rows.Add(item.Id, item.Name, item.Email, item.Age, item.BloodType, item.FactorRh);
-            }
-
-            webReport.Report.RegisterData(donationsDataTable, "Blood Stock Report");
-        }
 
     }
 }

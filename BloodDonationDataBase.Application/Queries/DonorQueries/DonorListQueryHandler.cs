@@ -1,5 +1,6 @@
 ﻿using BloodDonationDataBase.Application.Dtos;
 using BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonor;
+using BloodDonationDataBase.Application.Logs;
 using BloodDonationDataBase.Domain.Errors;
 using BloodDonationDataBase.Domain.IRepositories;
 using MediatR;
@@ -25,6 +26,7 @@ namespace BloodDonationDataBase.Application.Queries.DonorQueries
             var donorList = await _unitOfWork.DonorRepository.GetAll(request);
             if (donorList is null)
             {
+                Log.LogToFile("Donors null", DonorErrors.Notfound.ToString());
                 return ResultViewModel<List<DonorResponseList>>.Error(DonorErrors.Notfound.ToString());
             }
 
@@ -35,6 +37,8 @@ namespace BloodDonationDataBase.Application.Queries.DonorQueries
                     donor.Weight, donor.BloodType, donor.FactorRh);
                 newDonorsList.Add(newDonor);
             }
+
+            Log.LogToFile("List Donors", "Success");
 
             return ResultViewModel<List<DonorResponseList>>.Success(newDonorsList);
         }

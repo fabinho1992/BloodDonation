@@ -17,6 +17,7 @@ using BloodDonationDataBase.Application.Commands.DonationCommands.CreateDonation
 using BloodDonationDataBase.Application.Commands.DonorCommands.CreateDonorCommands;
 using BloodDonationDataBase.Application.Commands.DonorCommands.UpdateDonorCommands;
 using FastReport.Data;
+using BloodDonationDataBase.Application.ServiceReport;
 
 namespace BloodDonationDataBase.Extensions.Dependencies
 {
@@ -60,6 +61,7 @@ namespace BloodDonationDataBase.Extensions.Dependencies
             services.AddScoped<IBloodStockRepository, BloodStockRepositoy>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IAddressZipCode, AddressZipCode>();
+            services.AddScoped<IGenerateDataTableReport, GenerateDataTableReport>();
 
 
             //fluentvalidation

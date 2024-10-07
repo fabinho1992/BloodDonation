@@ -1,11 +1,14 @@
 
 using Academia.WebApi.ErrosMiddleware;
+using BloodDonationDataBase.Application.Logs;
 using BloodDonationDataBase.Extensions.Dependencies;
+using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDependencyInjection(builder.Configuration);
+
 
 // Add services to the container.
 

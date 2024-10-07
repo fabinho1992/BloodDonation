@@ -1,0 +1,31 @@
+
+Consulta das doações dos últimos 30 dias com detalhes do doador
+
+SELECT 
+	do.Name,
+    do.Age,
+    CONVERT(VARCHAR, d.DateDonation, 103) AS data_doacao,  -- Formata a data como dd/mm/yyyy
+    d.QuantityMl
+    
+FROM 
+    Donations d inner
+JOIN 
+    Donors do ON d.DonorId = do.id
+WHERE 
+    d.DateDonation >= DATEADD(day, -30, GETDATE());
+
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Consulta que retorna a soma do estoque de sangue, somando cada tipo de sangue e retornando o total
+
+SELECT 
+	 BloodType 
+	,FactorRh
+	,Sum(QuantityML) AS QuantityMLAll
+FROM BloodStocks
+GROUP BY
+	 BloodType
+	,FactorRh
+ORDER BY BloodType
