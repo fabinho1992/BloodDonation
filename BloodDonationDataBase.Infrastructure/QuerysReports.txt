@@ -1,5 +1,5 @@
 
-Consulta das doações dos últimos 30 dias com detalhes do doador
+Consulta das doaï¿½ï¿½es dos ï¿½ltimos 30 dias com detalhes do doador
 
 SELECT 
 	do.Name,

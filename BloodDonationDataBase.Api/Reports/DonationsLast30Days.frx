@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/07/2024 10:17:44" ReportInfo.Modified="10/07/2024 10:28:21" ReportInfo.CreatorVersion="2024.2.0.0">
+  <Styles Name="Sand">
+    <Style Name="Title" Font="Arial, 12pt, style=Bold"/>
+    <Style Name="Header" Fill.Color="Moccasin" Font="Arial, 10pt, style=Bold"/>
+    <Style Name="Group" Font="Arial, 10pt, style=Bold"/>
+    <Style Name="Data" Font="Arial, 10pt"/>
+    <Style Name="Footer" Fill.Color="Moccasin" Font="Arial, 10pt"/>
+    <Style Name="EvenRows" Fill.Color="FloralWhite" Font="Arial, 10pt"/>
+  </Styles>
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqM7gJFg/iaLrqMhRfGy5lGnCTCE1D4aPvuZT2nExEB7PdY4MikhYVnChZzF0YQPWd9ymAtKrIoLdWE0ZPC94Bj3I010SaBtzc6f2sOszDPT7BRILrvud/lU89MxVVs4ldLI8qhPu547vNt1P+0Dbjxe0xGv2icwuI0bztjDS7e5SWqrzmwcIaZwxcazGwozUfahsm6jKu+1JTWC8MyazXCc+hIzukTBXQY26/540vPKY=">
+      <TableDataSource Name="Table" DataType="System.Int32" Enabled="true" SelectCommand="SELECT &#13;&#10;    do.Name,&#13;&#10;    do.Email,&#13;&#10;    do.Age,&#13;&#10;    do.BloodType,&#13;&#10;    do.FactorRh,&#13;&#10;    CONVERT(VARCHAR, d.DateDonation, 103) AS data_doacao,  -- Formata a data como dd/mm/yyyy&#13;&#10;    d.QuantityMl&#13;&#10;    &#13;&#10;FROM &#13;&#10;    Donations d inner&#13;&#10;JOIN &#13;&#10;    Donors do ON d.DonorId = do.id&#13;&#10;WHERE &#13;&#10;    d.DateDonation &gt;= DATEADD(day, -30, GETDATE());&#13;&#10;">
+        <Column Name="Name" DataType="System.String"/>
+        <Column Name="Email" DataType="System.String"/>
+        <Column Name="Age" DataType="System.Int32"/>
+        <Column Name="BloodType" DataType="System.String"/>
+        <Column Name="FactorRh" DataType="System.String"/>
+        <Column Name="data_doacao" DataType="System.String"/>
+        <Column Name="QuantityMl" DataType="System.Int32"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="47.25">
+      <TextObject Name="Text1" Width="718.2" Height="47.25" Dock="Fill" Text="Donations last 30 days" HorzAlign="Center" VertAlign="Center" Font="Arial, 12pt, style=Bold" Style="Title"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="51.25" Width="718.2" Height="28.35">
+      <TextObject Name="Text3" Width="207.9" Height="18.9" Fill.Color="Moccasin" Text="Name" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text7" Left="207.9" Width="103.95" Height="18.9" Fill.Color="Moccasin" Text="Age" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text9" Left="311.85" Width="103.95" Height="18.9" Fill.Color="Moccasin" Text="BloodType" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text11" Left="415.8" Width="103.95" Height="18.9" Fill.Color="Moccasin" Text="FactorRh" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text13" Left="519.75" Width="103.95" Height="18.9" Fill.Color="Moccasin" Text="data_doacao" Font="Arial, 10pt, style=Bold" Style="Header"/>
+      <TextObject Name="Text15" Left="623.7" Width="94.5" Height="18.9" Fill.Color="Moccasin" Text="QuantityMl" Font="Arial, 10pt, style=Bold" Style="Header"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="83.6" Width="718.2" Height="18.9" EvenStyle="EvenRows" DataSource="Table">
+      <TextObject Name="Text2" Width="207.9" Height="18.9" Text="[Table.Name]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text6" Left="207.9" Width="103.95" Height="18.9" Text="[Table.Age]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text8" Left="311.85" Width="103.95" Height="18.9" Text="[Table.BloodType]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text10" Left="415.8" Width="103.95" Height="18.9" Text="[Table.FactorRh]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text12" Left="519.75" Width="103.95" Height="18.9" Text="[Table.data_doacao]" Font="Arial, 10pt" Style="Data"/>
+      <TextObject Name="Text14" Left="623.7" Width="94.5" Height="18.9" Text="[Table.QuantityMl]" Font="Arial, 10pt" Style="Data"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="106.5" Width="718.2" Height="18.9">
+      <TextObject Name="Text16" Width="718.2" Height="18.9" Dock="Fill" Fill.Color="Moccasin" Text="[PageN]" HorzAlign="Right" Font="Arial, 10pt" Style="Footer"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

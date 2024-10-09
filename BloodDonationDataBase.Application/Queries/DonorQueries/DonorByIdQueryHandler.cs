@@ -30,7 +30,7 @@ namespace BloodDonationDataBase.Application.Queries.DonorQueries
             var donor = await _unitOfWork.DonorRepository.GetById(request.Id);
             if (donor is null)
             {
-                Log.LogToFile("Donor null", DonorErrors.Notfound.ToString());
+               // Log.LogToFile("Donor null", DonorErrors.Notfound.ToString());
                 return ResultViewModel<DonorResponse>.Error(DonorErrors.Notfound.ToString());
             }
 

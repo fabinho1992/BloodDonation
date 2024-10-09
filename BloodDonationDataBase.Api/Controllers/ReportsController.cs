@@ -1,4 +1,5 @@
 ﻿using BloodDonationDataBase.Application.Queries.BloodStockQueries.BloodStockReportQuery;
+using BloodDonationDataBase.Application.Queries.DonationQueries.DonationLast30DaysReportQuerys;
 using BloodDonationDataBase.Application.Queries.DonationQueries.DonationListToReportQuerys;
 using BloodDonationDataBase.Application.Queries.DonorQueries.DonorReportQuerys;
 using BloodDonationDataBase.Application.ServiceReport;
@@ -104,6 +105,32 @@ namespace BloodDonationDataBase.Api.Controllers
             return File(arrayReport, "application/zip", "DonationsReport.pdf");
 
         }
+
+        [HttpGet("Donations last 30 days")]
+        public async Task<IActionResult> DonationsthirtyDaysReport()
+        {
+            var donations = new DonationLast30DaysReportQuery();
+            if (donations is null)
+            {
+                return NotFound();
+            }
+            var result = await _mediator.Send(donations);
+
+            var webReport = new WebReport();
+            webReport.Report.Load(Path.Combine(_webHostEnvironment.ContentRootPath, "Reports", "DonationsLast30Days.frx"));
+
+            _generateDataTableReport.DataTableReportDonations(result, webReport);
+
+            webReport.Report.Prepare();
+
+            using MemoryStream stream = new MemoryStream();
+            webReport.Report.Export(new PDFSimpleExport(), stream);
+            stream.Flush();
+            byte[] arrayReport = stream.ToArray();
+            return File(arrayReport, "application/zip", "DonationsLastThirtyDaysReport.pdf");
+
+        }
+
 
 
     }

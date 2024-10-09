@@ -1,5 +1,6 @@
 ﻿using BloodDonationDataBase.Application.Dtos;
 using BloodDonationDataBase.Application.Dtos.ViewModels.ViewModelsDonor;
+using BloodDonationDataBase.Application.Logs;
 using BloodDonationDataBase.Application.Queries.DonorQueries;
 using BloodDonationDataBase.Domain.Enuns;
 using BloodDonationDataBase.Domain.IRepositories;
@@ -31,6 +32,7 @@ namespace BloodDonationDataBase.Tests.Aplication.Queries
 
             var donorQuery = new DonorByIdQuery(donorId);
             var handler = new DonorByIdQueryHandler(mockRepository.Object);
+            
 
             //Act
 

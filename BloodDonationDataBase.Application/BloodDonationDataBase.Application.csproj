@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Logs\FilesLogs\" />
+    <Folder Include="Logs\FilesLogs\NovaPasta\" />
   </ItemGroup>
 
 </Project>

@@ -10,7 +10,12 @@ namespace BloodDonationDataBase.Application.Logs
     {
         public static void LogToFile(string title, string message)
         {
-            string fileName = "FilesLogs/LogsDay.txt";
+            // Obtenha o caminho do diretório de trabalho do projeto de teste
+            string directoryPath = Directory.GetCurrentDirectory();
+
+            // Crie o caminho completo para o arquivo de log
+            string fileName = Path.Combine(directoryPath, "FilesLogs", "LogsDay.txt");
+
 
             StreamWriter streamWriter;
 

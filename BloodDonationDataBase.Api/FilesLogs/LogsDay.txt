@@ -16,3 +16,15 @@ Title Message : Donor null
 Message : Error { Code = Donor.NotFound, Message = The Donor could not be found }
 ------------------------------------------
 
+Log:
+segunda-feira, 7 de outubro de 2024
+Title Message : List Donors
+Message : Success
+------------------------------------------
+
+Log:
+quarta-feira, 9 de outubro de 2024
+Title Message : List Donors
+Message : Success
+------------------------------------------
+

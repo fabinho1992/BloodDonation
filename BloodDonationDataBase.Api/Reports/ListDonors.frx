@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report ScriptLanguage="CSharp" ReportInfo.Created="09/30/2024 23:17:02" ReportInfo.Modified="09/30/2024 23:42:26" ReportInfo.CreatorVersion="2024.2.0.0">
+<Report ScriptLanguage="CSharp" ReportInfo.Created="09/30/2024 23:17:02" ReportInfo.Modified="10/09/2024 11:44:49" ReportInfo.CreatorVersion="2024.2.0.0">
   <Dictionary>
-    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqM7gJFg/iaLrqMhRfGy5lGvAx302aU89ENBlhJoRP4RpyUF6EklTDbIUAs6k5G1AHXrgraKCgisxv8ovueijHEbZ0CGoKfK/QR2ffti1SKmpnH4q6RiRnNi+kIobKvWxSGDArvWHq72bxCvNepwQh2IAgjpNSW8lhN94MLHqHHz7mhIkhCTS+b7/I0h72xJAtklzYnzoUmXSulhOXv9HAB2zDcTnpezEuIOSoRKY2ND0=">
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlqM7gJFg/iaLrqMhRfGy5lGnCTCE1D4aPvuZT2nExEB7PdY4MikhYVnChZzF0YQPWd9ymAtKrIoLdWE0ZPC94Bj3I010SaBtzc6f2sOszDPT7BRILrvud/lU89MxVVs4ldLI8qhPu547vNt1P+0Dbjxe0xGv2icwuI0bztjDS7e5SWqrzmwcIaZwxcazGwozUfahsm6jKu+1JTWC8MyazXCXHJfx/84uROy1CUZRADG6s=">
       <TableDataSource Name="Donors" DataType="System.Int32" Enabled="true" TableName="Donors">
         <Column Name="Id" DataType="System.Int32"/>
         <Column Name="Name" DataType="System.String"/>
@@ -30,7 +30,7 @@
       <TextObject Name="Text12" Left="491.4" Top="9.45" Width="94.5" Height="18.9" Text="BloodType" HorzAlign="Center" Font="Arial, 10pt"/>
       <TextObject Name="Text14" Left="614.25" Top="9.45" Width="94.5" Height="18.9" Text="FactorRh" HorzAlign="Center" Font="Arial, 10pt"/>
     </PageHeaderBand>
-    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="75.6" DataSource="Donors">
+    <DataBand Name="Data1" Top="74.15" Width="718.2" Height="75.6">
       <TextObject Name="Text3" Top="37.8" Width="94.5" Height="18.9" Text="[Donors.Id]" HorzAlign="Center" Font="Arial, 10pt"/>
       <TextObject Name="Text5" Left="132.3" Top="37.8" Width="94.5" Height="18.9" Text="[Donors.Name]" HorzAlign="Center" Font="Arial, 10pt"/>
       <TextObject Name="Text7" Left="255.15" Top="37.8" Width="94.5" Height="18.9" Text="[Donors.Email]" HorzAlign="Center" Font="Arial, 10pt"/>

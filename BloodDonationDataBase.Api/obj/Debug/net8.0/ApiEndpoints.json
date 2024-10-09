@@ -11,6 +11,16 @@
   },
   {
     "ContainingType": "BloodDonationDataBase.Api.Controllers.ReportsController",
+    "Method": "DonationsthirtyDaysReport",
+    "RelativePath": "api/Reports/Donations last 30 days",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BloodDonationDataBase.Api.Controllers.ReportsController",
     "Method": "DonationsReport",
     "RelativePath": "api/Reports/Donations report",
     "HttpMethod": "GET",

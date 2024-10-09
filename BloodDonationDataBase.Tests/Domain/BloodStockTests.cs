@@ -26,7 +26,7 @@ namespace BloodDonationDataBase.Tests.Domain
             //Assert
 
             Assert.NotNull( newBloodStock );
-            Assert.Equal(100, newBloodStock.QuantityMl);
+            Assert.Equal(550, newBloodStock.QuantityMl);
         }
 
         [Fact]
@@ -46,7 +46,7 @@ namespace BloodDonationDataBase.Tests.Domain
             //Assert
 
             Assert.NotNull(newBloodStock);
-            Assert.Equal(50, newBloodStock.QuantityMl);
+            Assert.Equal(500, newBloodStock.QuantityMl);
         }
     }
 }
